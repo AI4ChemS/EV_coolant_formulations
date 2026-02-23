@@ -1,9 +1,9 @@
 # Self-Driving Discovery of Electric Vehicle Coolants
 
-```html
 <p align="center">
   <img src="figures/image1.png" width="650">
 </p>
+
 
 This repository contains the implementation of the computational
 screening framework presented in:
