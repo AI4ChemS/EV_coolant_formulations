@@ -1,4 +1,3 @@
-# src/fambo_filters/thermo/viscosity_filter.py
 
 from __future__ import annotations
 

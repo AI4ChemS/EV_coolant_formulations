@@ -1,4 +1,3 @@
-# src/fambo_filters/thermo/prop_mpnn.py
 from __future__ import annotations
 
 import json
@@ -12,6 +11,8 @@ import pandas as pd
 
 # your stack
 import torch
+torch.set_float32_matmul_precision("high")  # or "medium"
+
 import lightning.pytorch as pl
 from lightning.pytorch.callbacks import ModelCheckpoint
 from sklearn.model_selection import train_test_split

@@ -1,0 +1,28 @@
+# Core scientific stack
+numpy>=1.23
+pandas==2.2.3
+scikit-learn>=1.2
+tqdm>=4.65
+requests>=2.31
+ipykernel
+pyarrow>=15.0.0
+ipywidgets
+litlogger
+litmodels
+openai==1.68.2
+mordred==1.2.0 
+beautifulsoup4
+lxml==6.0.2
+
+# Deep learning
+torch==2.6.0
+lightning==2.5.0
+
+# Chemprop
+chemprop==2.1.1
+
+# MixProp viscosity / excess model
+mixprop
+
+# Zenodo downloader
+zenodo-get>=1.3

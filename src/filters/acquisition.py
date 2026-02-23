@@ -1,4 +1,3 @@
-# src/fambo_filters/pubchem/acquisition.py
 
 from __future__ import annotations
 

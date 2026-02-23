@@ -1,4 +1,3 @@
-# src/fambo_filters/pubchem/smiles_filter.py
 
 from __future__ import annotations
 
