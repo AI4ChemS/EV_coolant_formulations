@@ -1,12 +1,10 @@
 # Self-Driving Discovery of Electric Vehicle Coolants
 
-```{=html}
+```html
 <p align="center">
-```
-`<img src="figures/image1.png" width="650">`{=html}
-```{=html}
+  <img src="figures/image1.png" width="650">
 </p>
-```
+
 This repository contains the implementation of the computational
 screening framework presented in:
 
@@ -42,7 +40,7 @@ The discovery pipeline follows a structured screening funnel:
     -   Corrosion\
 
 4.  **Dynamic Viscosity Prediction**\
-    Ensemble-based MixProp model for viscosity estimation.
+    Ensemble-based model for viscosity estimation.
 
 5.  **Mixture Non-Linearity & Excess Property Screening**\
     Identification of favorable non-ideal mixture behavior.
