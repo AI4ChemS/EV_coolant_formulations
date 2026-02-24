@@ -5,19 +5,17 @@ from typing import List, Tuple, Dict, Any, Optional
 import numpy as np
 import pandas as pd
 
-# Optional deps for token counting / validation
 try:
     import tiktoken
     _HAS_TIKTOKEN = True
 except Exception:
     _HAS_TIKTOKEN = False
 
-# OpenAI SDK
 from openai import OpenAI
 
 
 # -----------------------------
-# Prompts (kept same as yours)
+# Prompts
 # -----------------------------
 DEFAULT_SYSTEM_PROMPT = (
     "You are a chemist assistant with expertise in material compatibility and chemical properties. "
@@ -73,7 +71,7 @@ def load_jsonl(path: str) -> List[Dict[str, Any]]:
 
 def validate_chat_jsonl_format(dataset: List[Dict[str, Any]]) -> Dict[str, int]:
     """
-    Lightweight version of your format checks.
+    Lightweight version of format checks.
     Returns dict of errors (empty => OK).
     """
     format_errors = defaultdict(int)
@@ -115,7 +113,7 @@ def validate_chat_jsonl_format(dataset: List[Dict[str, Any]]) -> Dict[str, int]:
 # -----------------------------
 def token_stats(dataset: List[Dict[str, Any]], model_encoding: str = "cl100k_base") -> Dict[str, Any]:
     """
-    Replicates your token counting approach.
+    Replicates token counting approach.
     Requires tiktoken installed. If not installed, raises RuntimeError.
     """
     if not _HAS_TIKTOKEN:
@@ -224,8 +222,7 @@ def predict_corrosion_for_smiles_list(
     temperature: float = 0.0,
 ) -> List[str]:
     """
-    Runs chat completions for each SMILES and returns raw string outputs (as you do now).
-    Keeps your inference prompt style.
+    Runs chat completions for each SMILES and returns raw string outputs.
     """
     client = OpenAI(api_key=api_key)
 

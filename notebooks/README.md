@@ -47,9 +47,6 @@ Substructure screening for ester-containing molecules.
 
 Multi-criteria ranking using the VIKOR decision-making framework.
 
-### `09_filtering_process.ipynb`
-
-End-to-end demonstration of the complete filtering pipeline.
 
 ------------------------------------------------------------------------
 

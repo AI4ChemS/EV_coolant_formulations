@@ -223,7 +223,7 @@ def visc_nonlinearity_pred_check(args):
         args["smi1"] = data[cols[0]].iloc[i]
         args["smi2"] = data[cols[1]].iloc[i]
 
-        # Define mole fraction range (your chosen points)
+        # Define mole fraction range 
         frac_vals = [0.25, 0.5, 0.75]
 
         # Predict viscosity at pure fluid fractions (molfrac1 = 0 and molfrac1 = 1)
@@ -285,7 +285,6 @@ def visc_nonlinearity_pred_check(args):
     return data
 
 
-# Optional CLI entry point
 def main():
     """
     Example CLI usage:

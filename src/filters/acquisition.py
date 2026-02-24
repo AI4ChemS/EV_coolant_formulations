@@ -43,7 +43,6 @@ def _pubchem_get_json(
 ) -> dict:
     """
     Robust GET with retry + exponential backoff.
-    Handles 429 rate limiting and transient 5xx errors.
     """
     last_err: Optional[str] = None
     for attempt in range(max_retries):
@@ -124,7 +123,7 @@ def _save_parquet(df: pd.DataFrame, path: Path) -> None:
 
 
 # -----------------------------
-# Main entry function (PUBLIC)
+# Main entry function
 # -----------------------------
 def run_acquisition(
     start_cid: int,
@@ -185,8 +184,6 @@ def run_acquisition(
 
     for bi, batch in enumerate(batches, start=1):
         try:
-            # Inject timeout/retry params by temporarily wrapping session.get behavior via args
-            # (timeout is passed in _pubchem_get_json, retries handled there)
             batch_map = fetch_pubchem_properties_batch(batch, session=session, properties=properties)
         except Exception as e:
             manifest["failed_batches"].append(

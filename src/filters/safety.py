@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 
 # ----------------------------
-# Default H-phrases (same list)
+# Default H-phrases
 # ----------------------------
 DEFAULT_H_PHRASES = [
     "H200", "H201", "H202", "H203", "H204", "H205", "H206", "H207", "H208", "H209", "H210", "H211", "H220", "H221", "H222", "H223",
@@ -24,14 +24,12 @@ DEFAULT_H_PHRASES = [
 
 # ----------------------------
 # 1) Optional: fetch precaution table from PubChem GHS page
-# (kept from your code; not required for H-code annotation)
 # ----------------------------
 def fetch_precaution_table(session: requests.Session = None, url: str = "https://pubchem.ncbi.nlm.nih.gov/ghs/#_prec"):
     """
     Returns df_precaution with columns:
       - P Codes
       - Precautionary Statements
-    Based on your scraping logic.
     """
     if session is None:
         session = requests.Session()
@@ -45,7 +43,6 @@ def fetch_precaution_table(session: requests.Session = None, url: str = "https:/
     p_codes_list = []
     precaution_statements_list = []
 
-    # Your selector logic
     pcode_table = soup.select("#pcode")
     if not pcode_table:
         return pd.DataFrame({"P Codes": [], "Precautionary Statements": []})
@@ -93,13 +90,9 @@ def init_ghs_columns(df_inventory: pd.DataFrame, h_phrases=None):
     return df_inventory
 
 
-# ----------------------------
-# 3) Fetch PubChem GHS classification with retries/backoff
-# ----------------------------
 def fetch_ghs_data(chem_id, session: requests.Session, max_retries=5):
     """
     Fetches PubChem PUG-View JSON (as text), then returns BeautifulSoup(...).text
-    Matches your approach.
     """
     url = (
         f"https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/{int(chem_id)}/JSON/"
@@ -118,7 +111,6 @@ def fetch_ghs_data(chem_id, session: requests.Session, max_retries=5):
                 time.sleep(wait_time)
                 continue
 
-            # Other HTTP errors => stop retry
             return None
 
         except requests.exceptions.RequestException:
@@ -128,7 +120,7 @@ def fetch_ghs_data(chem_id, session: requests.Session, max_retries=5):
 
 
 # ----------------------------
-# 4) Main annotation loop
+# 3) Main annotation loop
 # ----------------------------
 def annotate_ghs_inventory(
     df_inventory: pd.DataFrame,
@@ -145,12 +137,7 @@ def annotate_ghs_inventory(
     Loops over PubChem IDs, fetches GHS hazard statements, and marks:
       - Hxxx columns = 1 if detected
       - 'GHS Codes' = 'unsafe' if hazard statements found
-      - else sets 'GHS Codes' = 'safe' for the "no hazard codes" branch (as in your code)
-
-    Notes:
-      - keeps your 'len(soup) > 90' guard
-      - keeps your pattern logic as-is
-      - periodic autosave (optional)
+      - else sets 'GHS Codes' = 'safe' for the "no hazard codes" branch
     """
     if h_phrases is None:
         h_phrases = DEFAULT_H_PHRASES
@@ -178,13 +165,12 @@ def annotate_ghs_inventory(
 
                     df_inventory.loc[df_inventory[pubchem_id_col] == chem_id, "GHS Codes"] = "unsafe"
                 else:
-                    # Your code: if "GHS Hazard Statements" exists but no H-codes pattern => mark safe
+                    # if "GHS Hazard Statements" exists but no H-codes pattern => mark safe
                     df_inventory.loc[df_inventory[pubchem_id_col] == chem_id, "GHS Codes"] = "safe"
             else:
-                # Your code: if no "GHS Hazard Statements" => mark unsafe
+                # if no "GHS Hazard Statements" => mark unsafe
                 df_inventory.loc[df_inventory[pubchem_id_col] == chem_id, "GHS Codes"] = "unsafe"
 
-        # else: do nothing (pass), matching your code
 
         i += 1
         time.sleep(sleep_between)
@@ -197,7 +183,7 @@ def annotate_ghs_inventory(
 
 
 # ----------------------------
-# 5) Convenience: load -> annotate -> save
+# 4) Convenience: load -> annotate -> save
 # ----------------------------
 def run_ghs_pipeline(
     input_csv_path: str,

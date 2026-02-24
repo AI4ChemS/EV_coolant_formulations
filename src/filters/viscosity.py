@@ -16,7 +16,7 @@ class ViscosityPredConfig:
     smiles_col: str = "SMILES"
     miu_col: str = "MIU"
 
-    # MixProp args (defaults match your snippet)
+    # MixProp args
     smi2: str = "c1ccccc1"
     molfrac1: float = 1.0
     T: float = 298.0
@@ -35,7 +35,7 @@ def add_viscosity_predictions(
     df: pd.DataFrame,
     *,
     config: ViscosityPredConfig = ViscosityPredConfig(),
-    input_path_for_args: str = "",   # kept for compatibility with your args dict
+    input_path_for_args: str = "",  
     show_progress: bool = True,
 ) -> pd.DataFrame:
     """
@@ -73,7 +73,7 @@ def add_viscosity_predictions(
             "num_workers": config.num_workers,
             "check_phase": config.check_phase,
             "checkpoint_dir": config.checkpoint_dir,
-            "input_path": input_path_for_args,  # some wrappers expect it; may be unused here
+            "input_path": input_path_for_args, 
         }
 
         out = visc_pred_single(args)
@@ -84,7 +84,6 @@ def add_viscosity_predictions(
     df_out[config.pred_col] = preds
     df_out[config.rel_col] = rels
 
-    # ensure only requested columns (optional; remove if you want to keep extra cols)
     df_out = df_out[[config.smiles_col, config.miu_col, config.pred_col, config.rel_col]]
 
     return df_out

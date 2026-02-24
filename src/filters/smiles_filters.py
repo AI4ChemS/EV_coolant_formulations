@@ -8,7 +8,7 @@ import pandas as pd
 
 try:
     from rdkit import Chem
-except ImportError as e:  # pragma: no cover
+except ImportError as e:  
     raise ImportError(
         "RDKit is required for SMILES filtering. Install via conda (recommended):\n"
         "  conda install -c conda-forge rdkit\n"
@@ -45,7 +45,7 @@ class SmilesFilterConfig:
     )
 
 
-# Metals list (as in your code; you can move to a data file later)
+# Metals list
 DEFAULT_METALS: Tuple[str, ...] = (
     "Li", "Be", "Na", "Mg", "K", "Ca", "Sc", "Ti", "V", "Cr",
     "Mn", "Fe", "Co", "Ni", "Cu", "Zn", "Rb", "Sr", "Y", "Zr",
@@ -162,14 +162,13 @@ def filter_smiles_exclusions(
     if config.exclude_functional_groups:
         fg_queries = _compile_smarts(config.functional_groups_smarts)
 
-    # Optional tqdm progress
     iterator = df.iterrows()
     if use_tqdm:
         try:
             from tqdm import tqdm
             iterator = tqdm(iterator, total=len(df), desc="Stage-0 SMILES exclusions")
         except Exception:
-            pass  # tqdm not available; fall back silently
+            pass  
 
     reasons: List[Optional[str]] = []
     for _, row in iterator:
@@ -235,6 +234,5 @@ def run_stage0_smiles_filter(
         use_tqdm=use_tqdm,
     )
 
-    # combine excluded
     excluded_all = pd.concat([excluded1, excluded2], axis=0, ignore_index=False)
     return passed2, excluded_all

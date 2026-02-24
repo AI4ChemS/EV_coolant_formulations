@@ -9,7 +9,6 @@ from typing import Dict, List, Optional, Tuple
 import numpy as np
 import pandas as pd
 
-# your stack
 import torch
 torch.set_float32_matmul_precision("high")  # or "medium"
 
@@ -17,7 +16,7 @@ import lightning.pytorch as pl
 from lightning.pytorch.callbacks import ModelCheckpoint
 from sklearn.model_selection import train_test_split
 
-from chemprop import data, featurizers, models, nn  # adjust if your imports differ
+from chemprop import data, featurizers, models, nn  
 
 
 @dataclass(frozen=True)
