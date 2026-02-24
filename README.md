@@ -1,7 +1,7 @@
 # Self-Driving Discovery of Electric Vehicle Coolants
 
 <p align="center">
-  <img src="figures/image1.png" width="1000">
+  <img src="figures/image1.png" width="1200">
 </p>
 
 
