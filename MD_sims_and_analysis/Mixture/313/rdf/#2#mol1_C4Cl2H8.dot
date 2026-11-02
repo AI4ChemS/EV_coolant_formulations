@@ -1,0 +1,32 @@
+graph molecule {
+  graph [pack=true,splines=true,overlap=false];
+  node [shape=none,fontsize=16,fontname="Arial",margin=0,fixedsize=true,height=0.28];
+  edge [style=bold,len=0.70];
+  C1 [label="C1",width=0.34];
+  C2 [label="C2",width=0.34];
+  Cl1 [label="Cl1",width=0.51];
+  Cl2 [label="Cl2",width=0.51];
+  C3 [label="C3",width=0.34];
+  C4 [label="C4",width=0.34];
+  H1 [label="H1",width=0.34];
+  H4 [label="H4",width=0.34];
+  H3 [label="H3",width=0.34];
+  H2 [label="H2",width=0.34];
+  H5 [label="H5",width=0.34];
+  H6 [label="H6",width=0.34];
+  H7 [label="H7",width=0.34];
+  H8 [label="H8",width=0.34];
+  C1 -- C3 [weight=10000, penwidth=2.500000];
+  C1 -- H1 [weight=6, penwidth=0.650000];
+  C1 -- H2 [weight=6, penwidth=0.650000];
+  C1 -- Cl1 [weight=102, penwidth=2.500000];
+  C2 -- C4 [weight=10000, penwidth=2.500000];
+  C2 -- H4 [weight=6, penwidth=0.650000];
+  C2 -- H3 [weight=6, penwidth=0.650000];
+  C2 -- Cl2 [weight=102, penwidth=2.500000];
+  C3 -- C4 [weight=10000, penwidth=2.500000];
+  C3 -- H5 [weight=6, penwidth=0.650000];
+  C3 -- H6 [weight=6, penwidth=0.650000];
+  C4 -- H7 [weight=6, penwidth=0.650000];
+  C4 -- H8 [weight=6, penwidth=0.650000];
+}

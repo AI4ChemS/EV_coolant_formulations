@@ -1,0 +1,15 @@
+
+
+# ----------------- Init Section -----------------
+
+include "mixid_977_system.in.init"
+
+
+# ----------------- Atom Definition Section -----------------
+
+read_data "mixid_977_system.data"
+
+# ----------------- Settings Section -----------------
+
+include "mixid_977_system.in.settings"
+

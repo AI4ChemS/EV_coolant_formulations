@@ -1,0 +1,13 @@
+import "C11.lt"  # <- This defines the C11
+import "C26.lt"  # <- This defines the C26
+
+# Periodic boundary conditions:
+write_once("Data Boundary") {
+  0.0  44.00  xlo xhi
+  0.0  44.00  ylo yhi
+  0.0  44.00  zlo zhi
+}
+
+# Create molecules onto grid
+C11 = new C11[87]
+C26 = new C26[256]

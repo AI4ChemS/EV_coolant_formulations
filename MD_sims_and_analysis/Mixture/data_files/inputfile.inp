@@ -1,0 +1,13 @@
+tolerance 2
+filetype pdb
+output mixid_977_packed.pdb
+
+structure C11.pdb
+  number 87
+  inside box 0. 0. 0. 44.0 44.0 44.0
+end structure
+
+structure C26.pdb
+  number 256
+  inside box 0. 0. 0. 44.0 44.0 44.0
+end structure

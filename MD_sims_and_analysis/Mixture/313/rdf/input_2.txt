@@ -1,0 +1,80 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Dec  9 2023 02:02:10
+! Source code version: Jul 29 2022
+! Input file written at Tue Apr  7 13:16:41 2026.
+! Enter the file name of the .xyz frame with the atom labels: 
+mixid_977_packed.xyz
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+n
+! Use these values (y) or enter different values (n)? [yes] 
+n
+! Use these values (y/n)? [yes] 
+n
+! Are the 3 cell vectors of the same size (yes/no)? [yes] 
+y
+! Enter length of cell vector in pm: 
+3998.5042
+! Create images of the structural formulas (y/n)? [no] 
+y
+! Accept these molecules (y) or change something (n)? [yes] 
+y
+! Which functions to compute (comma separated)?
+rdf
+! Use the advanced mode for the main part (y/n)? [no] 
+
+! Which of the molecules should be the reference molecule (C4Cl2H8=1, C5H12O=2)? 
+2
+! Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+! Which molecule should be observed (C4Cl2H8=1, C5H12O=2)? 
+2
+! Take reference atom(s) from RM C4Cl2H8 (0) or from OM C4Cl2H8 (1)? [0] 
+
+! Take observed atom(s) from RM C4Cl2H8 (0) or from OM C4Cl2H8 (1)? [1] 
+
+! Which atom(s) to take from RM C4Cl2H8 (e.g. "C1,C3-5,H", "*"=all)? [#2]
+#1
+! Which atom(s) to take from OM C4Cl2H8 (e.g. "C1,C3-5,H", "*"=all)? [#2]
+#1
+! Enter the maximal radius of this RDF (in pm): [1900.0]
+
+! Enter the resolution (bin count) for this RDF: [1200] 
+
+! Correct radial distribution for this RDF (y/n)? [yes] 
+
+! Save temporal development for this observation (y/n)? [no] 
+
+! Add a condition to this observation (y/n)? [no] 
+
+! Add another observation (y/n)? [no] 
+y
+! Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+! Which molecule should be observed (C4Cl2H8=1, C5H12O=2)? 
+1
+! Take reference atom(s) from RM C4Cl2H8 (0) or from OM C5H12O (1)? [0] 
+
+! Take observed atom(s) from RM C4Cl2H8 (0) or from OM C5H12O (1)? [1] 
+
+! Which atom(s) to take from RM C4Cl2H8 (e.g. "C1,C3-5,H", "*"=all)? [#2]
+#1
+! Which atom(s) to take from OM C5H12O (e.g. "C1,C3-5,H", "*"=all)? [#2]
+#1
+! Enter the maximal radius of this RDF (in pm): [1900.0]
+
+! Enter the resolution (bin count) for this RDF: [1200] 
+
+! Correct radial distribution for this RDF (y/n)? [yes] 
+
+! Save temporal development for this observation (y/n)? [no] 
+
+! Add a condition to this observation (y/n)? [no] 
+
+! Add another observation (y/n)? [no] 
+
+! In which trajectory frame to start processing the trajectory? [1] 
+
+! How many trajectory frames to read (from this position on)? [all] 
+
+! Use every n-th read trajectory frame for the analysis: [1] 
+

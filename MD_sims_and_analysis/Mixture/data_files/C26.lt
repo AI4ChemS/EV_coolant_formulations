@@ -1,0 +1,234 @@
+C26 {
+
+  ### LAMMPS commands for initialization
+  ### (These can be overridden later.)
+
+
+  write_once("In Init") {
+    atom_style full
+  }
+
+  write_once("In Settings") {
+    pair_coeff @atom:type1 @atom:type1 0.066 3.5000000
+    pair_coeff @atom:type2 @atom:type2 0.066 3.5000000
+    pair_coeff @atom:type3 @atom:type3 0.066 3.5000000
+    pair_coeff @atom:type4 @atom:type4 0.300 3.4000000
+    pair_coeff @atom:type5 @atom:type5 0.066 3.5000000
+    pair_coeff @atom:type6 @atom:type6 0.300 3.4000000
+    pair_coeff @atom:type7 @atom:type7 0.030 2.5000000
+    pair_coeff @atom:type8 @atom:type8 0.030 2.5000000
+    pair_coeff @atom:type9 @atom:type9 0.030 2.5000000
+    pair_coeff @atom:type10 @atom:type10 0.030 2.5000000
+    pair_coeff @atom:type11 @atom:type11 0.030 2.5000000
+    pair_coeff @atom:type12 @atom:type12 0.030 2.5000000
+    pair_coeff @atom:type13 @atom:type13 0.030 2.5000000
+    pair_coeff @atom:type14 @atom:type14 0.030 2.5000000
+  }
+
+  write_once("In Settings") {
+    bond_coeff @bond:type1 268.0000 1.5290
+    bond_coeff @bond:type2 268.0000 1.5290
+    bond_coeff @bond:type3 245.0000 1.7810
+    bond_coeff @bond:type4 268.0000 1.5290
+    bond_coeff @bond:type5 245.0000 1.7810
+    bond_coeff @bond:type6 340.0000 1.0900
+    bond_coeff @bond:type7 340.0000 1.0900
+    bond_coeff @bond:type8 340.0000 1.0900
+    bond_coeff @bond:type9 340.0000 1.0900
+    bond_coeff @bond:type10 340.0000 1.0900
+    bond_coeff @bond:type11 340.0000 1.0900
+    bond_coeff @bond:type12 340.0000 1.0900
+    bond_coeff @bond:type13 340.0000 1.0900
+  }
+
+  write_once("In Settings") {
+    angle_coeff @angle:type1 58.350 112.700
+    angle_coeff @angle:type2 69.000 109.800
+    angle_coeff @angle:type3 58.350 112.700
+    angle_coeff @angle:type4 69.000 109.800
+    angle_coeff @angle:type5 37.500 110.700
+    angle_coeff @angle:type6 37.500 110.700
+    angle_coeff @angle:type7 37.500 110.700
+    angle_coeff @angle:type8 37.500 110.700
+    angle_coeff @angle:type9 37.500 110.700
+    angle_coeff @angle:type10 37.500 110.700
+    angle_coeff @angle:type11 37.500 110.700
+    angle_coeff @angle:type12 37.500 110.700
+    angle_coeff @angle:type13 51.000 107.600
+    angle_coeff @angle:type14 37.500 110.700
+    angle_coeff @angle:type15 33.000 107.800
+    angle_coeff @angle:type16 33.000 107.800
+    angle_coeff @angle:type17 37.500 110.700
+    angle_coeff @angle:type18 51.000 107.600
+    angle_coeff @angle:type19 33.000 107.800
+    angle_coeff @angle:type20 37.500 110.700
+    angle_coeff @angle:type21 51.000 107.600
+    angle_coeff @angle:type22 51.000 107.600
+    angle_coeff @angle:type23 33.000 107.800
+    angle_coeff @angle:type24 37.500 110.700
+  }
+
+  write_once("In Settings") {
+    dihedral_coeff @dihedral:type1 0.000 0.000 0.400 0.000
+    dihedral_coeff @dihedral:type2 1.300 -0.200 0.200 0.000
+    dihedral_coeff @dihedral:type3 0.000 0.000 0.400 0.000
+    dihedral_coeff @dihedral:type4 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type5 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type6 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type7 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type8 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type9 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type10 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type11 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type12 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type13 0.000 0.000 0.400 0.000
+    dihedral_coeff @dihedral:type14 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type15 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type16 0.000 0.000 0.400 0.000
+    dihedral_coeff @dihedral:type17 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type18 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type19 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type20 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type21 0.000 0.000 0.400 0.000
+    dihedral_coeff @dihedral:type22 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type23 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type24 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type25 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type26 0.000 0.000 0.300 0.000
+    dihedral_coeff @dihedral:type27 0.000 0.000 0.400 0.000
+  }
+
+  write_once("In Settings") {
+    improper_coeff @improper:type1 0.000 -1 2
+    improper_coeff @improper:type2 0.000 -1 2
+    improper_coeff @improper:type3 0.000 -1 2
+    improper_coeff @improper:type4 0.000 -1 2
+    improper_coeff @improper:type5 0.000 -1 2
+    improper_coeff @improper:type6 0.000 -1 2
+    improper_coeff @improper:type7 0.000 -1 2
+    improper_coeff @improper:type8 0.000 -1 2
+  }
+
+
+  ### DATA sections
+
+
+  write_once("Data Masses") {
+    @atom:type1 12.011
+    @atom:type2 12.011
+    @atom:type3 12.011
+    @atom:type4 35.450
+    @atom:type5 12.011
+    @atom:type6 35.450
+    @atom:type7 1.008
+    @atom:type8 1.008
+    @atom:type9 1.008
+    @atom:type10 1.008
+    @atom:type11 1.008
+    @atom:type12 1.008
+    @atom:type13 1.008
+    @atom:type14 1.008
+  }
+
+  write("Data Atoms") {
+    $atom:type1 $mol:m1 @atom:type1 -0.19320714 1.000 1.00000 0.00000
+    $atom:type2 $mol:m1 @atom:type2 -0.19340714 -0.529 1.00000 0.00000
+    $atom:type3 $mol:m1 @atom:type3 0.01659286 -1.078 1.00000 1.42097
+    $atom:type4 $mol:m1 @atom:type4 -0.28090714 -2.856 0.99789 1.39436
+    $atom:type5 $mol:m1 @atom:type5 0.01669286 1.549 0.99820 -1.42096
+    $atom:type6 $mol:m1 @atom:type6 -0.28110714 3.327 0.99613 -1.39435
+    $atom:type7 $mol:m1 @atom:type7 0.10939286 1.365 0.11761 0.54052
+    $atom:type8 $mol:m1 @atom:type8 0.10939286 1.365 1.88372 0.53827
+    $atom:type9 $mol:m1 @atom:type9 0.10939286 -0.894 0.11690 -0.53942
+    $atom:type10 $mol:m1 @atom:type10 0.10939286 -0.894 1.88312 -0.53943
+    $atom:type11 $mol:m1 @atom:type11 0.11949286 -0.754 1.89024 1.96858
+    $atom:type12 $mol:m1 @atom:type12 0.11949286 -0.752 0.11107 1.96936
+    $atom:type13 $mol:m1 @atom:type13 0.11939286 1.226 1.88737 -1.97063
+    $atom:type14 $mol:m1 @atom:type14 0.11939286 1.224 0.10891 -1.96920
+  }
+
+  write("Data Bonds") {
+    $bond:id1 @bond:type1 $atom:type2 $atom:type1
+    $bond:id2 @bond:type2 $atom:type3 $atom:type2
+    $bond:id3 @bond:type3 $atom:type4 $atom:type3
+    $bond:id4 @bond:type4 $atom:type5 $atom:type1
+    $bond:id5 @bond:type5 $atom:type6 $atom:type5
+    $bond:id6 @bond:type6 $atom:type7 $atom:type1
+    $bond:id7 @bond:type7 $atom:type8 $atom:type1
+    $bond:id8 @bond:type8 $atom:type9 $atom:type2
+    $bond:id9 @bond:type9 $atom:type10 $atom:type2
+    $bond:id10 @bond:type10 $atom:type11 $atom:type3
+    $bond:id11 @bond:type11 $atom:type12 $atom:type3
+    $bond:id12 @bond:type12 $atom:type13 $atom:type5
+    $bond:id13 @bond:type13 $atom:type14 $atom:type5
+  }
+
+  write("Data Angles") {
+    $angle:id1 @angle:type1 $atom:type1 $atom:type2 $atom:type3
+    $angle:id2 @angle:type2 $atom:type2 $atom:type3 $atom:type4
+    $angle:id3 @angle:type3 $atom:type2 $atom:type1 $atom:type5
+    $angle:id4 @angle:type4 $atom:type1 $atom:type5 $atom:type6
+    $angle:id5 @angle:type5 $atom:type2 $atom:type1 $atom:type7
+    $angle:id6 @angle:type6 $atom:type2 $atom:type1 $atom:type8
+    $angle:id7 @angle:type7 $atom:type1 $atom:type2 $atom:type9
+    $angle:id8 @angle:type8 $atom:type1 $atom:type2 $atom:type10
+    $angle:id9 @angle:type9 $atom:type2 $atom:type3 $atom:type11
+    $angle:id10 @angle:type10 $atom:type2 $atom:type3 $atom:type12
+    $angle:id11 @angle:type11 $atom:type1 $atom:type5 $atom:type13
+    $angle:id12 @angle:type12 $atom:type1 $atom:type5 $atom:type14
+    $angle:id13 @angle:type13 $atom:type4 $atom:type3 $atom:type11
+    $angle:id14 @angle:type14 $atom:type5 $atom:type1 $atom:type8
+    $angle:id15 @angle:type15 $atom:type9 $atom:type2 $atom:type10
+    $angle:id16 @angle:type16 $atom:type13 $atom:type5 $atom:type14
+    $angle:id17 @angle:type17 $atom:type5 $atom:type1 $atom:type7
+    $angle:id18 @angle:type18 $atom:type6 $atom:type5 $atom:type14
+    $angle:id19 @angle:type19 $atom:type11 $atom:type3 $atom:type12
+    $angle:id20 @angle:type20 $atom:type3 $atom:type2 $atom:type9
+    $angle:id21 @angle:type21 $atom:type6 $atom:type5 $atom:type13
+    $angle:id22 @angle:type22 $atom:type4 $atom:type3 $atom:type12
+    $angle:id23 @angle:type23 $atom:type7 $atom:type1 $atom:type8
+    $angle:id24 @angle:type24 $atom:type3 $atom:type2 $atom:type10
+  }
+
+  write("Data Dihedrals") {
+    $dihedral:id1 @dihedral:type1 $atom:type4 $atom:type3 $atom:type2 $atom:type1
+    $dihedral:id2 @dihedral:type2 $atom:type5 $atom:type1 $atom:type2 $atom:type3
+    $dihedral:id3 @dihedral:type3 $atom:type6 $atom:type5 $atom:type1 $atom:type2
+    $dihedral:id4 @dihedral:type4 $atom:type11 $atom:type3 $atom:type2 $atom:type9
+    $dihedral:id5 @dihedral:type5 $atom:type11 $atom:type3 $atom:type2 $atom:type1
+    $dihedral:id6 @dihedral:type6 $atom:type12 $atom:type3 $atom:type2 $atom:type10
+    $dihedral:id7 @dihedral:type7 $atom:type9 $atom:type2 $atom:type1 $atom:type5
+    $dihedral:id8 @dihedral:type8 $atom:type13 $atom:type5 $atom:type1 $atom:type7
+    $dihedral:id9 @dihedral:type9 $atom:type14 $atom:type5 $atom:type1 $atom:type2
+    $dihedral:id10 @dihedral:type10 $atom:type7 $atom:type1 $atom:type2 $atom:type3
+    $dihedral:id11 @dihedral:type11 $atom:type13 $atom:type5 $atom:type1 $atom:type2
+    $dihedral:id12 @dihedral:type12 $atom:type14 $atom:type5 $atom:type1 $atom:type8
+    $dihedral:id13 @dihedral:type13 $atom:type8 $atom:type1 $atom:type5 $atom:type6
+    $dihedral:id14 @dihedral:type14 $atom:type10 $atom:type2 $atom:type1 $atom:type5
+    $dihedral:id15 @dihedral:type15 $atom:type12 $atom:type3 $atom:type2 $atom:type1
+    $dihedral:id16 @dihedral:type16 $atom:type9 $atom:type2 $atom:type3 $atom:type4
+    $dihedral:id17 @dihedral:type17 $atom:type10 $atom:type2 $atom:type1 $atom:type7
+    $dihedral:id18 @dihedral:type18 $atom:type9 $atom:type2 $atom:type1 $atom:type8
+    $dihedral:id19 @dihedral:type19 $atom:type8 $atom:type1 $atom:type2 $atom:type3
+    $dihedral:id20 @dihedral:type20 $atom:type9 $atom:type2 $atom:type1 $atom:type7
+    $dihedral:id21 @dihedral:type21 $atom:type7 $atom:type1 $atom:type5 $atom:type6
+    $dihedral:id22 @dihedral:type22 $atom:type14 $atom:type5 $atom:type1 $atom:type7
+    $dihedral:id23 @dihedral:type23 $atom:type10 $atom:type2 $atom:type1 $atom:type8
+    $dihedral:id24 @dihedral:type24 $atom:type13 $atom:type5 $atom:type1 $atom:type8
+    $dihedral:id25 @dihedral:type25 $atom:type11 $atom:type3 $atom:type2 $atom:type10
+    $dihedral:id26 @dihedral:type26 $atom:type12 $atom:type3 $atom:type2 $atom:type9
+    $dihedral:id27 @dihedral:type27 $atom:type10 $atom:type2 $atom:type3 $atom:type4
+  }
+
+  write("Data Impropers") {
+    $improper:id1 @improper:type1 $atom:type1 $atom:type2 $atom:type5 $atom:type7
+    $improper:id2 @improper:type2 $atom:type1 $atom:type2 $atom:type5 $atom:type8
+    $improper:id3 @improper:type3 $atom:type2 $atom:type9 $atom:type3 $atom:type1
+    $improper:id4 @improper:type4 $atom:type2 $atom:type1 $atom:type10 $atom:type3
+    $improper:id5 @improper:type5 $atom:type3 $atom:type2 $atom:type11 $atom:type4
+    $improper:id6 @improper:type6 $atom:type3 $atom:type4 $atom:type2 $atom:type12
+    $improper:id7 @improper:type7 $atom:type5 $atom:type1 $atom:type13 $atom:type6
+    $improper:id8 @improper:type8 $atom:type5 $atom:type1 $atom:type14 $atom:type6
+  }
+
+} # end of "C26" type definition

@@ -1,0 +1,8 @@
+tolerance 2
+filetype pdb
+output mixid_983_packed.pdb
+
+structure C11.pdb
+  number 351
+  inside box 0. 0. 0. 44.0 44.0 44.0
+end structure
