@@ -1,0 +1,76 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Dec  9 2023 02:02:10
+! Source code version: Jul 29 2022
+! Input file written at Tue Jan 20 13:22:04 2026.
+! Enter the file name of the .xyz frame with the atom labels: 
+mixid_983_packed.xyz
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+n
+! Use these values (y) or enter different values (n)? [yes] 
+n
+! Use these values (y/n)? [yes] 
+n
+! Are the 3 cell vectors of the same size (yes/no)? [yes] 
+
+! Enter length of cell vector in pm: 
+4006.0769
+! Create images of the structural formulas (y/n)? [no] 
+y
+! Accept these molecules (y) or change something (n)? [yes] 
+
+! Which functions to compute (comma separated)?
+rdf
+! Use the advanced mode for the main part (y/n)? [no] 
+y
+! Please enter the atom to put into the box center (e.g. C3): [center of mass]
+O
+! Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+! Observe only certain molecules of C5H12O / C5H12O (y/n)? [no] 
+
+! Decompose this observation into contributions from different elements (y/n)? [no] 
+
+! Take reference atom(s) from RM C5H12O (0) or from OM C5H12O (1)? [0] 
+
+! Take observed atom(s) from RM C5H12O (0) or from OM C5H12O (1)? [1] 
+
+! Which atom(s) to take from RM C5H12O (e.g. "C1,C3-5,H", "*"=all)? [#2]
+O
+! Which atom(s) to take from OM C5H12O (e.g. "C1,C3-5,H", "*"=all)? [#2]
+H
+! Add another set of atoms to this (!) RDF (y/n)? [no] 
+
+! Use values (0), 1st time derivative (1), or 2nd time derivative (2) of the values? [0] 
+
+! Enter the minimal radius of this RDF (in pm): [0] 
+
+! Enter the maximal radius of this RDF (in pm): [2000.0] 
+2000
+! Enter the resolution (bin count) for this RDF: [300] 
+
+! Please enter histogram resolution (0=no histogram): [0] 
+
+! Draw a line in the agr file at g(r) = 1 (y/n)? [no] 
+
+! Correct radial distribution for this RDF (y/n)? [yes] 
+
+! Compute occurrence in nm^(-3) (y) or rel. to uniform density (n)? [no] 
+y
+! Save temporal development for this observation (y/n)? [no] 
+
+! Create a temporal difference plot for this observation (y/n)? [no] 
+
+! Create a fraction temporal development plot (y/n)? 
+
+! Add a condition to this observation (y/n)? [no] 
+
+! Add another observation (y/n)? [no] 
+
+! Perform a multi-interval analysis (y/n)? [no] 
+
+! In which trajectory frame to start processing the trajectory? [1] 
+
+! How many trajectory frames to read (from this position on)? [all] 
+
+! Use every n-th read trajectory frame for the analysis: [1] 
+

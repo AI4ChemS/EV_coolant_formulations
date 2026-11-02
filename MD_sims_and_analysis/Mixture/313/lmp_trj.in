@@ -1,0 +1,74 @@
+
+
+# ----------------- Init Section -----------------
+
+units           real
+atom_style      full
+bond_style      harmonic
+angle_style     harmonic
+improper_style  cvff
+dihedral_style  opls
+pair_style lj/cut/coul/long 12.500
+kspace_style    pppm 1.0e-4
+pair_modify     tail yes mix arithmetic
+special_bonds   lj/coul 0.0 0.0 0.5
+
+# ----------------- Atom Definition Section -----------------
+
+read_data ${data}
+
+include ${settings}
+
+# ----------------- Settings Section -----------------
+
+log ${name}_trj.log
+
+## create velocity profile
+velocity        all create ${mytemp} 2 units box
+velocity        all zero linear units box
+
+timestep 1
+
+restart 1000000  ${name}.*.restart
+
+variable        t equal "step"
+variable        T equal "temp"
+variable        P equal "press"
+variable        vme equal "vol"
+variable        poTE equal "pe"
+variable        kiE equal "ke"
+variable        totalE equal "etotal"
+variable        vdwlE equal "evdwl"
+variable        coulombicE equal "ecoul"
+variable        longE equal "elong"
+variable        pairE equal "epair"
+variable        molE equal "emol"
+variable        H equal "enthalpy"
+variable        d equal "density"
+
+thermo_style    custom step temp press vol pe ke etotal enthalpy evdwl ecoul elong epair emol density
+thermo          1000
+
+fix             1 all deform 1 x final 0.0 ${BoxLength} y final 0.0 ${BoxLength} z final 0.0 ${BoxLength}
+run             1
+unfix           1
+
+print           "Step Temp Press Volume PotEng KinEng TotEng Enthalpy E_vdwl E_coul E_long E_pair E_mol Density" file ${name}_${mytemp}_trj_equil_thermo.txt
+fix             PRINT all print 1000 "$t $T $P $(v_vme) $(v_poTE) $(v_kiE) $(v_totalE) $H $(v_vdwlE) $(v_coulombicE) $(v_longE) $(v_pairE) $(v_molE)" append ${name}_${mytemp}_trj_equil_thermo.txt title ""
+fix             NVT all nvt temp ${mytemp} ${mytemp} 100.0 
+run             1000000
+unfix           NVT
+unfix           PRINT
+
+dump            DUMP all dcd 100 ${name}.dcd
+dump_modify	DUMP sort id
+
+dump            DCD all dcd 100 ${name}.dcd
+dump_modify	DCD sort id
+
+print           "Step Temp Press Volume PotEng KinEng TotEng Enthalpy E_vdwl E_coul E_long E_pair E_mol Density" file ${name}_${mytemp}_trj_thermostyle.txt
+fix             PRINT all print 100 "$t $T $P $(v_vme) $(v_poTE) $(v_kiE) $(v_totalE) $H $(v_vdwlE) $(v_coulombicE) $(v_longE) $(v_pairE) $(v_molE)" append ${name}_${mytemp}_trj_thermostyle.txt title ""
+fix             NVT all nvt temp ${mytemp} ${mytemp} 100.0 
+run             200000
+unfix           NVT
+unfix           PRINT

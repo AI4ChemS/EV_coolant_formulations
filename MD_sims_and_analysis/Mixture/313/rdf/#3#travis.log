@@ -1,0 +1,651 @@
+Command line:
+"travis -p mixid_977.dcd -i input.txt"
+
+
+  ________                                 __
+ /        |                               /  |
+ ########/ ______    ______    __     __  ##/    _______
+    ## |  /      \  /      \  /  \   /  | /  |  /       |
+    ## | /######  | ######  | ##  \ /##/  ## | /#######/
+    ## | ## |  ##/  /    ## |  ##  /##/   ## | ##      \
+    ## | ## |      /####### |   ## ##/    ## |  ######  |
+    ## | ## |      ##    ## |    ###/     ## | /     ##/
+    ##/  ##/        #######/      #/      ##/  #######/
+
+    TRajectory Analyzer and VISualizer  -  Open-source free software under GNU GPL v3
+
+    Copyright (c) Martin Brehm      (2009-2022), University of Halle (Saale)
+                  Martin Thomas     (2012-2022)
+                  Sascha Gehrke     (2016-2022), University of Bonn
+                  Barbara Kirchner  (2009-2022), University of Bonn
+
+    http://www.travis-analyzer.de
+
+    Please cite: J. Chem. Phys. 2020, 152 (16), 164105.         (DOI 10.1063/5.0005078 )
+                 J. Chem. Inf. Model. 2011, 51 (8), 2007-2023.  (DOI 10.1021/ci200217w )
+
+    There is absolutely no warranty on any results obtained from TRAVIS.
+
+ #  Running on login3 at Tue Apr  7 13:26:51 2026 (PID 3087186)
+ #  Running in /scratch/fcarmona/SDL_paper_analysis/mixid_977/313/rdf
+ #  Version: Jul 29 2022, built at Dec  9 2023, 02:01:57, compiler "12.3.1 20230526", GCC 12.3.1
+ #  Target platform: Linux, __cplusplus=201402L, Compile flags: NEW_CHARGEVAR DEBUG_ARRAYS 
+ #  Machine: x86_64, char=1b, int=4b, long=8b, addr=8b, 0xA0B0C0D0=D0,C0,B0,A0.
+ #  Home: /home/fcarmona,  Executable: /cvmfs/soft.computecanada.ca/easybuild/software/2023/x86-64-v4/Compiler/gcc12/travis-analyzer/220729/bin/travis
+ #  Input from input.txt, Output to terminal
+
+    >>> Please use a color scheme with dark background or specify "-nocolor"! <<<
+
+    Loading configuration from /home/fcarmona/.travis.conf ...
+
+    Opening position trajectory mixid_977.dcd ...
+
+    You are opening a DCD file. DCD files do not contain any atom labels, but TRAVIS requires them.
+    You need to supply a single .xyz snapshot with the correct atom labels (coordinates are ignored).
+
+    Enter the file name of the .xyz frame with the atom labels: mixid_977_packed.xyz
+
+    DCD file contains 2 comment lines:
+      "Written by LAMMPS"
+      "REMARKS Created 20 January,2026 at 11:01                                        "
+
+    Found non-orthorhombic cell geometry in trajectory file.
+
+    Trajectory contains approximately 2000 frames (just a *guess* from the file size of 118.03 MiB).
+
+    5150 atoms in the system: 1459x C, 512x Cl, 3092x H, 87x O
+
+    System extent:  X = {    -30 ..  +4012 pm }, dX = 4042 pm
+      (in step 1)   Y = {    -28 ..  +4020 pm }, dY = 4047 pm
+                    Z = {    -35 ..  +4018 pm }, dZ = 4054 pm
+
+    The "advanced mode" offers seldomly required features, including support for non-orthorhombic
+    simulation cells, NPT ensemble, non-periodic systems, user-definded virtual atoms, pseudomolecules, ...
+
+    Use the advanced mode until the analysis selection menu (y/n)? [no] n
+
+    Found cell geometry data in trajectory file:
+
+    *** Non-orthorhombic cell geometry ***
+    *
+    *   Cell vector A: (  3998.5042 |     0.0000 |     0.0000 ), Length   3998.504 pm.
+    *   Cell vector B: (  3998.5042 |     0.0000 |     0.0000 ), Length   3998.504 pm.
+    *   Cell vector C: (  3998.5042 |       -nan |        nan ), Length        nan pm.
+    *
+    *   Cell angle Alpha (between B and C):      nan degree.
+    *   Cell angle Beta  (between A and C):      nan degree.
+    *   Cell angle Gamma (between A and B):    0.000 degree.
+    *
+    *   Cell volume:  nan Angstrom^3 = nan nm^3.
+    *   Cell density: nan g/cm^3.
+    *
+    *   Orthogonal bounding box of the cell:
+    *     dX = 11995.5126 pm,  dY =        nan pm,  dZ =        nan pm.
+    *
+    *   Minimal periodic diameter (smallest distance between atom and its periodic image):
+    *     Min. Diam. =        nan pm.
+    *     ( dA =        nan pm,  dB =        nan pm,  dC =        nan pm )
+    *
+    *   Determinant of the forward transformation matrix is           NAN.
+    *   Determinant of the backward transformation matrix is          NAN.
+    *
+    *** End of non-orthorhombic cell geometry ***
+
+    Assuming a 3D-periodic cell.
+
+    Use these values (y) or enter different values (n)? [yes] n
+    A cell vector of 4056.00 pm would result in a density of 1.0 g/cm^3.
+
+    Cell vector found in trajectory file:
+      X = 11995.51 pm,   Y = nan pm,   Z = nan pm
+
+    Use these values (y/n)? [yes] n
+    Are the 3 cell vectors of the same size (yes/no)? [yes] y
+    Enter length of cell vector in pm: 3998.5042
+
+    The box size is 3998.50 x 3998.50 x 3998.50 pm.
+    The overall box density is 1.043762 g/cm^3.
+
+    Using the following element data:
+
+      Element | Ord. Number |  Mass / u | Cov. Radius / pm | VdW Radius / pm | Color
+    ----------|-------------|-----------|------------------|-----------------|----------
+      H       |           1 |   1.00798 |            37.00 |          109.00 | #FFFFFF
+      C       |           6 |  12.01060 |            82.00 |          170.00 | #808080
+      O       |           8 |  15.99940 |            75.00 |          152.00 | #FF0000
+      Cl      |          17 |  35.45150 |           102.00 |          175.00 | #00FF00
+
+
+    Initialized spatial domain engine with 17 x 17 x 17 cells, min. diameter = 235 pm.
+
+    Molecule recognition [###########################################################]
+
+    343 molecules found.
+
+    Sorting atom types...
+    Setting up bond lists...
+    Building atom codes...
+    Creating refined topological atom order...
+      [############################################################] Done.
+    Creating bond list...
+    Creating angle list...
+    Grouping together equivalent molecules...
+    Found 2 unique molecule types.
+    Sorting molecule types by molecular mass...
+    Found 0 rings.
+    Molecule recognition finished.
+
+Output of bond matrices:
+
+*** Molecule 1: C4Cl2H8; Representant 1; Distances in pm ***
+
+    C1  C2  C3  C4 Cl1 Cl2  H1  H2  H3  H4  H5  H6  H7  H8 
+C1  ***  -  155  -  176  -  105 107  -   -   -   -   -   -  
+C2   -  ***  -  151  -  181  -   -  108 111  -   -   -   -  
+C3  155  -  *** 158  -   -   -   -   -   -  104 112  -   -  
+C4   -  151 158 ***  -   -   -   -   -   -   -   -  109 108 
+Cl1 176  -   -   -  ***  -   -   -   -   -   -   -   -   -  
+Cl2  -  181  -   -   -  ***  -   -   -   -   -   -   -   -  
+H1  105  -   -   -   -   -  ***  -   -   -   -   -   -   -  
+H2  107  -   -   -   -   -   -  ***  -   -   -   -   -   -  
+H3   -  108  -   -   -   -   -   -  ***  -   -   -   -   -  
+H4   -  111  -   -   -   -   -   -   -  ***  -   -   -   -  
+H5   -   -  104  -   -   -   -   -   -   -  ***  -   -   -  
+H6   -   -  112  -   -   -   -   -   -   -   -  ***  -   -  
+H7   -   -   -  109  -   -   -   -   -   -   -   -  ***  -  
+H8   -   -   -  108  -   -   -   -   -   -   -   -   -  *** 
+
+    Atoms C1, C2 are equivalent.
+    Atoms C3, C4 are equivalent.
+    Atoms Cl1, Cl2 are equivalent.
+    Atoms H1, H2, H3, H4 are equivalent.
+    Atoms H5, H6, H7, H8 are equivalent.
+
+*** Molecule 2: C5H12O; Representant 1; Distances in pm ***
+
+    C1  C2  C3  C4  C5  H1  H2  H3  H4  H5  H6  H7  H8  H9  H10 H11 H12 O1 
+C1  *** 154  -  152  -  110  -   -   -   -   -   -   -   -   -   -   -  140 
+C2  154 *** 151  -   -   -   -  104 108  -   -   -   -   -   -   -   -   -  
+C3   -  151 ***  -  156  -   -   -   -  104 111  -   -   -   -   -   -   -  
+C4  152  -   -  ***  -   -   -   -   -   -   -  111 111 107  -   -   -   -  
+C5   -   -  156  -  ***  -   -   -   -   -   -   -   -   -  109 110 109  -  
+H1  110  -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   -   -  
+H2   -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -   94 
+H3   -  104  -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -   -  
+H4   -  108  -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -   -  
+H5   -   -  104  -   -   -   -   -   -  ***  -   -   -   -   -   -   -   -  
+H6   -   -  111  -   -   -   -   -   -   -  ***  -   -   -   -   -   -   -  
+H7   -   -   -  111  -   -   -   -   -   -   -  ***  -   -   -   -   -   -  
+H8   -   -   -  111  -   -   -   -   -   -   -   -  ***  -   -   -   -   -  
+H9   -   -   -  107  -   -   -   -   -   -   -   -   -  ***  -   -   -   -  
+H10  -   -   -   -  109  -   -   -   -   -   -   -   -   -  ***  -   -   -  
+H11  -   -   -   -  110  -   -   -   -   -   -   -   -   -   -  ***  -   -  
+H12  -   -   -   -  109  -   -   -   -   -   -   -   -   -   -   -  ***  -  
+O1  140  -   -   -   -   -   94  -   -   -   -   -   -   -   -   -   -  *** 
+
+    Atoms H3, H4 are equivalent.
+    Atoms H5, H6 are equivalent.
+    Atoms H7, H8, H9 are equivalent.
+    Atoms H10, H11, H12 are equivalent.
+
+
+*** The following 2 kinds of molecules have been recognized:
+    (ordered by molecular mass)
+
+  - Molecule 1:  C4Cl2H8 (256 pieces, 127.01 g/mol)
+      (5 noneq. atoms, 5 noneq. bonds, 8 noneq. angles)
+      Concentration:   6.649613 mol/liter
+
+  - Molecule 2:  C5H12O (87 pieces, 88.15 g/mol)
+      (12 noneq. atoms, 11 noneq. bonds, 19 noneq. angles)
+      Concentration:   2.259829 mol/liter
+
+
+    If you switch on "USE_OPENBABEL" in config.h, TRAVIS can print SMILES strings of your molecules.
+
+    You can create images of the structural formulas with the atom labels for easier
+    identification of the atoms (requires installed GraphViz package - see www.graphviz.org).
+
+    Create images of the structural formulas (y/n)? [no] y
+
+    * Molecule 1: C4Cl2H8
+      Writing dot file mol1_C4Cl2H8.dot ...
+[Renaming existing File mol1_C4Cl2H8.dot to #2#mol1_C4Cl2H8.dot ...OK.]
+      Command: dot mol1_C4Cl2H8.dot -Tpng -omol1_C4Cl2H8.png -Kneato -Gepsilon=0.000001 -Gnslimit=5000 -Gmclimit=5000 -v -Gstart=302129044
+      Optimizing (10 tries): [##########]
+      Quality statistics: Min 3.49774, Max 3.63801, Avg 3.54948.
+      Using best result to produce output file.
+
+    * Molecule 2: C5H12O
+      Writing dot file mol2_C5H12O.dot ...
+[Renaming existing File mol2_C5H12O.dot to #2#mol2_C5H12O.dot ...OK.]
+      Command: dot mol2_C5H12O.dot -Tpng -omol2_C5H12O.png -Kneato -Gepsilon=0.000001 -Gnslimit=5000 -Gmclimit=5000 -v -Gstart=123243635
+      Optimizing (10 tries): [##########]
+      Quality statistics: Min 5.71486, Max 6.19838, Avg 5.91911.
+      Using best result to produce output file.
+
+    If the command above worked, you can now view the PNG files that have been created.
+
+
+    Accept these molecules (y) or change something (n)? [yes] y
+
+    Uniting molecules which have been broken by wrapping...
+      - Molecule C4Cl2H8[3] united, 2 bonds unwrapped.
+      - Molecule C4Cl2H8[4] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[15] united, 6 bonds unwrapped.
+      - Molecule C4Cl2H8[16] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[20] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[26] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[27] united, 10 bonds unwrapped.
+      - Molecule C4Cl2H8[29] united, 4 bonds unwrapped.
+      - Molecule C4Cl2H8[35] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[37] united, 11 bonds unwrapped.
+      - Molecule C4Cl2H8[39] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[42] united, 5 bonds unwrapped.
+      - Molecule C4Cl2H8[43] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[44] united, 2 bonds unwrapped.
+      - Molecule C4Cl2H8[45] united, 3 bonds unwrapped.
+      - Molecule C4Cl2H8[49] united, 2 bonds unwrapped.
+      - Molecule C4Cl2H8[52] united, 2 bonds unwrapped.
+      - Molecule C4Cl2H8[75] united, 5 bonds unwrapped.
+      - Molecule C4Cl2H8[76] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[77] united, 10 bonds unwrapped.
+      - Molecule C4Cl2H8[79] united, 6 bonds unwrapped.
+      - Molecule C4Cl2H8[81] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[88] united, 4 bonds unwrapped.
+      - Molecule C4Cl2H8[95] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[97] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[99] united, 2 bonds unwrapped.
+      - Molecule C4Cl2H8[100] united, 3 bonds unwrapped.
+      - Molecule C4Cl2H8[102] united, 7 bonds unwrapped.
+      - Molecule C4Cl2H8[103] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[109] united, 8 bonds unwrapped.
+      - Molecule C4Cl2H8[111] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[112] united, 7 bonds unwrapped.
+      - Molecule C4Cl2H8[113] united, 7 bonds unwrapped.
+      - Molecule C4Cl2H8[117] united, 10 bonds unwrapped.
+      - Molecule C4Cl2H8[127] united, 8 bonds unwrapped.
+      - Molecule C4Cl2H8[130] united, 5 bonds unwrapped.
+      - Molecule C4Cl2H8[132] united, 4 bonds unwrapped.
+      - Molecule C4Cl2H8[134] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[135] united, 5 bonds unwrapped.
+      - Molecule C4Cl2H8[138] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[147] united, 3 bonds unwrapped.
+      - Molecule C4Cl2H8[149] united, 3 bonds unwrapped.
+      - Molecule C4Cl2H8[153] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[160] united, 2 bonds unwrapped.
+      - Molecule C4Cl2H8[162] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[167] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[171] united, 11 bonds unwrapped.
+      - Molecule C4Cl2H8[173] united, 10 bonds unwrapped.
+      - Molecule C4Cl2H8[178] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[179] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[181] united, 4 bonds unwrapped.
+      - Molecule C4Cl2H8[183] united, 5 bonds unwrapped.
+      - Molecule C4Cl2H8[187] united, 10 bonds unwrapped.
+      - Molecule C4Cl2H8[189] united, 5 bonds unwrapped.
+      - Molecule C4Cl2H8[194] united, 3 bonds unwrapped.
+      - Molecule C4Cl2H8[197] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[200] united, 3 bonds unwrapped.
+      - Molecule C4Cl2H8[206] united, 4 bonds unwrapped.
+      - Molecule C4Cl2H8[211] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[213] united, 3 bonds unwrapped.
+      - Molecule C4Cl2H8[217] united, 3 bonds unwrapped.
+      - Molecule C4Cl2H8[219] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[223] united, 10 bonds unwrapped.
+      - Molecule C4Cl2H8[224] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[229] united, 12 bonds unwrapped.
+      - Molecule C4Cl2H8[242] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[245] united, 1 bonds unwrapped.
+      - Molecule C4Cl2H8[247] united, 5 bonds unwrapped.
+      - Molecule C4Cl2H8[249] united, 9 bonds unwrapped.
+      - Molecule C4Cl2H8[250] united, 2 bonds unwrapped.
+      - Molecule C4Cl2H8[251] united, 2 bonds unwrapped.
+      - Molecule C5H12O[2] united, 1 bonds unwrapped.
+      - Molecule C5H12O[4] united, 9 bonds unwrapped.
+      - Molecule C5H12O[5] united, 4 bonds unwrapped.
+      - Molecule C5H12O[9] united, 2 bonds unwrapped.
+      - Molecule C5H12O[10] united, 1 bonds unwrapped.
+      - Molecule C5H12O[12] united, 4 bonds unwrapped.
+      - Molecule C5H12O[14] united, 8 bonds unwrapped.
+      - Molecule C5H12O[16] united, 2 bonds unwrapped.
+      - Molecule C5H12O[20] united, 5 bonds unwrapped.
+      - Molecule C5H12O[22] united, 4 bonds unwrapped.
+      - Molecule C5H12O[24] united, 10 bonds unwrapped.
+      - Molecule C5H12O[26] united, 1 bonds unwrapped.
+      - Molecule C5H12O[32] united, 12 bonds unwrapped.
+      - Molecule C5H12O[39] united, 3 bonds unwrapped.
+      - Molecule C5H12O[43] united, 5 bonds unwrapped.
+      - Molecule C5H12O[45] united, 11 bonds unwrapped.
+      - Molecule C5H12O[49] united, 8 bonds unwrapped.
+      - Molecule C5H12O[51] united, 4 bonds unwrapped.
+      - Molecule C5H12O[52] united, 4 bonds unwrapped.
+      - Molecule C5H12O[58] united, 3 bonds unwrapped.
+      - Molecule C5H12O[61] united, 5 bonds unwrapped.
+      - Molecule C5H12O[63] united, 5 bonds unwrapped.
+      - Molecule C5H12O[67] united, 6 bonds unwrapped.
+      - Molecule C5H12O[68] united, 1 bonds unwrapped.
+      - Molecule C5H12O[71] united, 13 bonds unwrapped.
+      - Molecule C5H12O[74] united, 7 bonds unwrapped.
+      - Molecule C5H12O[77] united, 6 bonds unwrapped.
+      - Molecule C5H12O[78] united, 9 bonds unwrapped.
+      - Molecule C5H12O[79] united, 5 bonds unwrapped.
+      - Molecule C5H12O[80] united, 7 bonds unwrapped.
+      - Molecule C5H12O[83] united, 11 bonds unwrapped.
+      - Molecule C5H12O[84] united, 2 bonds unwrapped.
+
+    Determining maximum molecular diameters...
+
+    Found the following maximal molecular diameters:
+
+      (*) Molecule 1 (C4Cl2H8):    689.27 pm
+
+      (*) Molecule 2 (C5H12O):     714.42 pm
+
+
+    The atoms are currently ordered by topological priority.
+
+    Defining virtual atom #1 as molecular Center of Geometry:
+      - C4Cl2H8...
+      - C5H12O...
+
+    Defining virtual atom #2 as molecular Center of Mass:
+      - C4Cl2H8...
+      - C5H12O...
+
+    Defining molecular dipole vectors:
+
+      The last virtual atom of each molecule is defined as the tip of the dipole vector
+      starting in center of mass (#2). 1 Debye corresponds to 100 pm of vector length.
+      Only useful if dipole/charge data is provided. Otherwise vector has always length of zero.
+
+      - Dipole vector #2 --> #3 in C4Cl2H8 ...
+      - Dipole vector #2 --> #3 in C5H12O ...
+
+>>> 6 virtual atoms have been defined: >>>
+
+    #1 in C4Cl2H8: Center of Geometry.
+    #2 in C4Cl2H8: Center of Mass.
+
+    #3 in C4Cl2H8 - tip of molecular dipole vector starting in #2.
+
+    #1 in C5H12O: Center of Geometry.
+    #2 in C5H12O: Center of Mass.
+
+    #3 in C5H12O - tip of molecular dipole vector starting in #2.
+
+<<< End of virtual atoms <<<
+
+
+>>> List of functions <<<
+
+ *** Static (time independent) Functions
+ cdf      - Combined Distribution Function
+ rdf      - Radial Distribution Function
+ adf      - Angular Distribution Function
+ ddf      - Dihedral Distribution Function
+ pldf     - Point-Plane Distance Distribution
+ lidf     - Point-Line Distance Distribution
+ plproj   - Plane Projection Distribution
+ dprof    - Fixed Plane Density Profile
+ fpp      - Fixed Plane Projection
+ dens     - Density Distribution Function
+ sdf      - Spatial Distribution Function
+ psdf     - Pseudo SDF (only 2 ref. atoms)
+ dip      - Dipole Distribution Function
+ cond     - Evaluate Structural Condition
+ sfac     - Compute Structure Factor
+ agtopo   - Aggregation Topology Analysis
+ sankey   - Sankey diagram plot
+ cmat     - Contact Matrix / Connection Matrix
+ geodens  - Particle Density inside Geometric Object
+
+ *** Dynamic (time dependent) Functions
+ vdf      - Velocity Distribution Function
+ fdf      - Force Distribution Function
+ msd      - Mean Square Displacement / Diffusion Coefficients
+ acf      - Velocity Autocorrelation Functions
+ rdyn     - Vector Reorientation Dynamics
+ vhcf     - Van Hove Correlation Function
+ aggr     - Aggregation Functions (DACF, DLDF, DDisp)
+ hbond    - Hydrogen Bond Dynamics
+ ionpair  - Diffusion Corrected Ion Pair Dynamics
+ tddf     - Time Dependent Distribution Functions
+
+ *** Spectroscopic Functions
+ spec     - New Spectroscopy Module (IR, Raman, VCD, ROA)
+ power    - Calculate Power Spectrum
+ nc       - Normal Coordinate Analysis
+ ir       - (old) Calculate IR Spectrum
+ raman    - (old) Calculate Raman Spectrum
+ vcd      - (old) Calculate VCD Spectrum
+ rera     - Calculate Resonance Raman Spectrum
+ drst     - Save Dipole Restart File
+ mrst     - Save Magnetic Moment Restart File
+ pol      - Set up Polarizability Calculation
+
+ *** Miscellaneous Functions
+ env      - Save Trajectory of RM Environment / TDO Plot
+ proc     - Save Processed Trajectory
+ cut      - Cut Clusters
+ reg      - Region-specific Analysis
+ chi      - Chirality Analysis
+ eck      - Transform to Eckart Frame
+ swan     - Sort Wannier Centers
+ voro     - Basic Voronoi Analysis
+ vori     - Voronoi Integration Functions
+ vorochg  - Voronoi Charge Optimization
+ doma     - Domain Analysis
+ order    - Order Parameters
+ hole     - Hole Theory based Analysis
+ cla      - Cluster Analysis
+
+   (You may specify multiple analyses at once, but
+    the safe way is to perform only one kind of analysis at a time.)
+
+    Which functions to compute (comma separated)? rdf
+
+ rdf     - Radial Distribution Function
+
+    The advanced mode includes some options which are quite powerful,
+    yet possibly weird or seldomly required.
+
+    Use the advanced mode for the main part (y/n)? [no] <RETURN>
+
+
+    Which of the molecules should be the reference molecule (C4Cl2H8=1, C5H12O=2)? 1
+
+    C4Cl2H8 is the reference molecule.
+
+
+>>> Observation 1 >>>
+
+    Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] <RETURN>
+
+    Which molecule should be observed (C4Cl2H8=1, C5H12O=2)? 1
+
+>>> Radial Distribution Function >>>
+
+    Take reference atom(s) from RM C4Cl2H8 (0) or from OM C4Cl2H8 (1)? [0] <RETURN>
+    Take observed atom(s) from RM C4Cl2H8 (0) or from OM C4Cl2H8 (1)? [1] <RETURN>
+
+    Which atom(s) to take from RM C4Cl2H8 (e.g. "C1,C3-5,H", "*"=all)? [#2] #1
+    Which atom(s) to take from OM C4Cl2H8 (e.g. "C1,C3-5,H", "*"=all)? [#2] #1
+    This yields in 1 combinations.
+
+    The smallest periodic cell half diameter is 1999.25 pm. You can compute meaningful RDFs up to this distance.
+
+    There is also a long-range RDF formula by Roehrig & Kuehne which works up to 3462.81 pm.
+    If you enter a max. radius of > 1999.25 pm, you will be asked to switch it on.
+
+    Using 0 pm as the minimal radius of the RDF.
+
+    Enter the maximal radius of this RDF (in pm): [1900.0] <RETURN>
+
+    The default resolution is 300 bins per nm, corresponding to a bin width of 3.33 pm.
+
+    Enter the resolution (bin count) for this RDF: [570] <RETURN>
+    Correct radial distribution for this RDF (y/n)? [yes] <RETURN>
+
+<<< End of Radial Distribution Function <<<
+
+    Save temporal development for this observation (y/n)? [no] <RETURN>
+    Add a condition to this observation (y/n)? [no] <RETURN>
+
+<<< End of Observation 1 <<<
+
+    Add another observation (y/n)? [no] y
+
+>>> Observation 2 >>>
+
+    Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] <RETURN>
+
+    Which molecule should be observed (C4Cl2H8=1, C5H12O=2)? 2
+
+>>> Radial Distribution Function >>>
+
+    Take reference atom(s) from RM C4Cl2H8 (0) or from OM C5H12O (1)? [0] <RETURN>
+    Take observed atom(s) from RM C4Cl2H8 (0) or from OM C5H12O (1)? [1] <RETURN>
+
+    Which atom(s) to take from RM C4Cl2H8 (e.g. "C1,C3-5,H", "*"=all)? [#2] #1
+    Which atom(s) to take from OM C5H12O (e.g. "C1,C3-5,H", "*"=all)? [#2] #1
+    This yields in 1 combinations.
+
+    The smallest periodic cell half diameter is 1999.25 pm. You can compute meaningful RDFs up to this distance.
+
+    There is also a long-range RDF formula by Roehrig & Kuehne which works up to 3462.81 pm.
+    If you enter a max. radius of > 1999.25 pm, you will be asked to switch it on.
+
+    Using 0 pm as the minimal radius of the RDF.
+
+    Enter the maximal radius of this RDF (in pm): [1900.0] <RETURN>
+
+    The default resolution is 300 bins per nm, corresponding to a bin width of 3.33 pm.
+
+    Enter the resolution (bin count) for this RDF: [570] <RETURN>
+    Correct radial distribution for this RDF (y/n)? [yes] <RETURN>
+
+<<< End of Radial Distribution Function <<<
+
+    Save temporal development for this observation (y/n)? [no] <RETURN>
+    Add a condition to this observation (y/n)? [no] <RETURN>
+
+<<< End of Observation 2 <<<
+
+    Add another observation (y/n)? [no] <RETURN>
+
+>>> Observation List >>>
+
+  *** Observation 1
+    - RDF: C4Cl2H8_C4Cl2H8_[#1r_#1o]
+  *** Observation 2
+    - RDF: C4Cl2H8_C5H12O_[#1r_#1o]
+
+<<< End of Observation List <<<
+
+
+    Not wrapping molecules into the box.
+
+    Not removing center of mass movement of the box.
+
+    In which trajectory frame to start processing the trajectory? [1] <RETURN>
+    How many trajectory frames to read (from this position on)? [all] <RETURN>
+    Use every n-th read trajectory frame for the analysis: [1] <RETURN>
+
+    Using 2000 time steps: Every 1st within range 1 - approx. 2000.
+
+########## All information collected ##########
+
+>>> Initialization >>>
+
+Initializing observation 1...
+  Creating RDF...
+Initializing observation 2...
+  Creating RDF...
+
+<<< End of Initialization <<<
+
+
+##########   Starting Main Pass   ##########
+
+Hint: Press CTRL+C once to softly interrupt analysis and still write the results.
+      Creating an empty file named EXIT ("touch EXIT") has the same effect.
+
+Step      0 ..................................................
+Step     50 .................................................. ETA  5s
+Step   1050 ................................................
+End of trajectory file reached.
+
+
+##########   Main pass done   ##########
+
+2000 time steps processed.
+
+
+
+    Finishing analyses:
+----------------------------------------------------------------------------------------------------------
+
+
+>>> Observation 1 >>>
+
+* Radial Distribution Function
+    58537724 bin entries, 72022276 out of bin range (55.16 percent).
+    Max. bin entry: 3.077742E+05  -->  EPS: 5.820766E-11
+    Mean value:    1924.57 pm    Standard deviation:    548.908 pm
+    Min. value:     375.23 pm    Max.value:             3456.78 pm
+    Scaling RDF to uniform density ...
+    Correcting radial distribution...
+    Performing automatic peak detection...
+    No peaks detected.
+    Saving RDF as "rdf_C4Cl2H8_C4Cl2H8_[#1r_#1o].csv"...
+      Note: The third column of the text file contains the number integral / coordination number.
+    Saving RDF AGR file as "rdf_C4Cl2H8_C4Cl2H8_[#1r_#1o].agr"...
+
+>>> Observation 2 >>>
+
+* Radial Distribution Function
+    19895276 bin entries, 24648724 out of bin range (55.34 percent).
+    Max. bin entry: 1.057270E+05  -->  EPS: 1.455192E-11
+    Mean value:    1928.59 pm    Standard deviation:    546.911 pm
+    Min. value:    367.016 pm    Max.value:              3458.8 pm
+    Scaling RDF to uniform density ...
+    Correcting radial distribution...
+    Performing automatic peak detection...
+    No peaks detected.
+    Saving RDF as "rdf_C4Cl2H8_C5H12O_[#1r_#1o].csv"...
+      Note: The third column of the text file contains the number integral / coordination number.
+    Saving RDF AGR file as "rdf_C4Cl2H8_C5H12O_[#1r_#1o].agr"...
+
+
+----------------------------------------------------------------------------------------------------------
+    Finished all analyses.
+
+
+    Analysis was running for 0h 0m 10s.
+      (200.000 steps per second)
+
+
+    Note: To show a list of all persons who contributed to TRAVIS,
+          please add "-credits" to your command line arguments, or set the
+          variable "SHOWCREDITS" to "TRUE" in your travis.conf file.
+
+    Source code from other projects used in TRAVIS:
+      - lmfit     from Joachim Wuttke
+      - kiss_fft  from Mark Borgerding
+      - voro++    from Chris Rycroft
+
+    http://www.travis-analyzer.de
+
+    Please cite all of the following articles for the analyses you have used:
+
+  * For TRAVIS in general:
+
+    "TRAVIS - A Free Analyzer for Trajectories from Molecular Simulation",
+    M. Brehm, M. Thomas, S. Gehrke, B. Kirchner; J. Chem. Phys. 2020, 152 (16), 164105.   (DOI 10.1063/5.0005078 )
+
+    "TRAVIS - A Free Analyzer and Visualizer for Monte Carlo and Molecular Dynamics Trajectories",
+    M. Brehm, B. Kirchner; J. Chem. Inf. Model. 2011, 51 (8), pp 2007-2023.   (DOI 10.1021/ci200217w )
+
+*** The End ***
+

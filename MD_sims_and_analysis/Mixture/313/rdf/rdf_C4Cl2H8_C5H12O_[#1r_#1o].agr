@@ -1,0 +1,870 @@
+# Grace project file
+# Written by TRAVIS at Tue Apr  7 13:27:03 2026
+# See http://www.travis-analyzer.de
+@version 50119
+@page size 792, 612
+@page scroll 5%
+@page inout 5%
+@link page off
+@map font 0 to "Times-Roman", "Times-Roman"
+@map font 1 to "Times-Italic", "Times-Italic"
+@map font 2 to "Times-Bold", "Times-Bold"
+@map font 3 to "Times-BoldItalic", "Times-BoldItalic"
+@map font 4 to "Helvetica", "Helvetica"
+@map font 5 to "Helvetica-Oblique", "Helvetica-Oblique"
+@map font 6 to "Helvetica-Bold", "Helvetica-Bold"
+@map font 7 to "Helvetica-BoldOblique", "Helvetica-BoldOblique"
+@map font 8 to "Courier", "Courier"
+@map font 9 to "Courier-Oblique", "Courier-Oblique"
+@map font 10 to "Courier-Bold", "Courier-Bold"
+@map font 11 to "Courier-BoldOblique", "Courier-BoldOblique"
+@map font 12 to "Symbol", "Symbol"
+@map font 13 to "ZapfDingbats", "ZapfDingbats"
+@map color 0 to (255, 255, 255), "white"
+@map color 1 to (0, 0, 0), "black"
+@map color 2 to (255, 0, 0), "red"
+@map color 3 to (0, 255, 0), "green"
+@map color 4 to (0, 0, 255), "blue"
+@map color 5 to (255, 255, 0), "yellow"
+@map color 6 to (188, 143, 143), "brown"
+@map color 7 to (220, 220, 220), "grey"
+@map color 8 to (148, 0, 211), "violet"
+@map color 9 to (0, 255, 255), "cyan"
+@map color 10 to (255, 0, 255), "magenta"
+@map color 11 to (255, 165, 0), "orange"
+@map color 12 to (114, 33, 188), "indigo"
+@map color 13 to (103, 7, 72), "maroon"
+@map color 14 to (64, 224, 208), "turquoise"
+@map color 15 to (0, 139, 0), "green4"
+@map color 16 to (255, 255, 255), "color_bg"
+@reference date 0
+@date wrap off
+@date wrap year 1950
+@default linewidth 1.0
+@default linestyle 1
+@default color 1
+@default pattern 1
+@default font 0
+@default char size 1.000000
+@default symbol size 1.000000
+@default sformat "%.8g"
+@background color 16
+@page background fill on
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 0
+@timestamp char size 1.000000
+@timestamp def "xx"
+@r0 off
+@link r0 to g0
+@r0 type above
+@r0 linestyle 1
+@r0 linewidth 1.0
+@r0 color 1
+@r0 line 0, 0, 0, 0
+@r1 off
+@link r1 to g0
+@r1 type above
+@r1 linestyle 1
+@r1 linewidth 1.0
+@r1 color 1
+@r1 line 0, 0, 0, 0
+@r2 off
+@link r2 to g0
+@r2 type above
+@r2 linestyle 1
+@r2 linewidth 1.0
+@r2 color 1
+@r2 line 0, 0, 0, 0
+@r3 off
+@link r3 to g0
+@r3 type above
+@r3 linestyle 1
+@r3 linewidth 1.0
+@r3 color 1
+@r3 line 0, 0, 0, 0
+@r4 off
+@link r4 to g0
+@r4 type above
+@r4 linestyle 1
+@r4 linewidth 1.0
+@r4 color 1
+@r4 line 0, 0, 0, 0
+@g0 on
+@g0 hidden false
+@g0 type XY
+@g0 stacked false
+@g0 bar hgap 0.000000
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@with g0
+@    world 0.000000, 0.000000, 1900.000000, 1.547959
+@    stack world 0, 0, 0, 0
+@    znorm 1
+@    view 0.150000, 0.150000, 1.150000, 0.850000
+@    title "C4Cl2H8_C5H12O_[#1r_#1o]"
+@    title font 0
+@    title size 1.500000
+@    title color 1
+@    subtitle ""
+@    subtitle font 0
+@    subtitle size 1.000000
+@    subtitle color 1
+@    xaxes scale Normal
+@    yaxes scale Normal
+@    xaxes invert off
+@    yaxes invert off
+@    xaxis  on
+@    xaxis  type zero false
+@    xaxis  offset 0.000000 , 0.000000
+@    xaxis  bar on
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1.0
+@    xaxis  label "Distance / pm"
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label place normal
+@    xaxis  tick on
+@    xaxis  tick major 500.000000
+@    xaxis  tick minor ticks 1
+@    xaxis  tick default 6
+@    xaxis  tick place rounded true
+@    xaxis  tick in
+@    xaxis  tick major size 1.000000
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 2.0
+@    xaxis  tick major linestyle 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 2.0
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick minor grid off
+@    xaxis  tick minor size 0.500000
+@    xaxis  ticklabel on
+@    xaxis  ticklabel format decimal
+@    xaxis  ticklabel prec 0
+@    xaxis  ticklabel formula ""
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel angle 0
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel place normal
+@    xaxis  ticklabel offset auto
+@    xaxis  ticklabel offset 0.000000 , 0.010000
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  tick place normal
+@    xaxis  tick spec type none
+@    yaxis  on
+@    yaxis  type zero false
+@    yaxis  offset 0.000000 , 0.000000
+@    yaxis  bar on
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1.0
+@    yaxis  label "g(r)"
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label place normal
+@    yaxis  tick on
+@    yaxis  tick major 0.500000
+@    yaxis  tick minor ticks 1
+@    yaxis  tick default 6
+@    yaxis  tick place rounded true
+@    yaxis  tick in
+@    yaxis  tick major size 1.000000
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 2.0
+@    yaxis  tick major linestyle 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 2.0
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick minor grid off
+@    yaxis  tick minor size 0.500000
+@    yaxis  ticklabel on
+@    yaxis  ticklabel format decimal
+@    yaxis  ticklabel prec 1
+@    yaxis  ticklabel formula ""
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel angle 0
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel place normal
+@    yaxis  ticklabel offset auto
+@    yaxis  ticklabel offset 0.000000 , 0.010000
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  tick place normal
+@    yaxis  tick spec type none
+@    altxaxis  off
+@    altyaxis  off
+@    legend off
+@    legend loctype view
+@    legend 0.9, 0.84
+@    legend box color 1
+@    legend box pattern 1
+@    legend box linewidth 2.0
+@    legend box linestyle 1
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend font 4
+@    legend char size 1.000000
+@    legend color 1
+@    legend length 4
+@    legend vgap 1
+@    legend hgap 1
+@    legend invert false
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 2.000000
+@    frame color 1
+@    frame pattern 1
+@    frame background color 0
+@    frame background pattern 0
+@    s0 hidden false
+@    s0 type xy
+@    s0 symbol 0
+@    s0 symbol size 1.000000
+@    s0 symbol color 0
+@    s0 symbol pattern 1
+@    s0 symbol fill color 0
+@    s0 symbol fill pattern 0
+@    s0 symbol linewidth 1.0
+@    s0 symbol linestyle 1
+@    s0 symbol char 65
+@    s0 symbol char font 0
+@    s0 symbol skip 0
+@    s0 line type 1
+@    s0 line linestyle 1
+@    s0 line linewidth 2.0
+@    s0 line color 1
+@    s0 line pattern 1
+@    s0 baseline type 0
+@    s0 baseline off
+@    s0 dropline off
+@    s0 fill type 0
+@    s0 fill rule 0
+@    s0 fill color 1
+@    s0 fill pattern 1
+@    s0 avalue off
+@    s0 avalue type 2
+@    s0 avalue char size 1.000000
+@    s0 avalue font 0
+@    s0 avalue color 1
+@    s0 avalue rot 0
+@    s0 avalue format general
+@    s0 avalue prec 3
+@    s0 avalue prepend ""
+@    s0 avalue append ""
+@    s0 avalue offset 0.000000 , 0.000000
+@    s0 errorbar on
+@    s0 errorbar place both
+@    s0 errorbar color 4
+@    s0 errorbar pattern 1
+@    s0 errorbar size 1.000000
+@    s0 errorbar linewidth 1.0
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser linewidth 1.0
+@    s0 errorbar riser linestyle 1
+@    s0 errorbar riser clip off
+@    s0 errorbar riser clip length 0.100000
+@    s0 comment ""
+@    s0 legend  ""
+@target G0.S0
+@type xy
+1.66667 0
+5 0
+8.33333 0
+11.6667 0
+15 0
+18.3333 0
+21.6667 0
+25 0
+28.3333 0
+31.6667 0
+35 0
+38.3333 0
+41.6667 0
+45 0
+48.3333 0
+51.6667 0
+55 0
+58.3333 0
+61.6667 0
+65 0
+68.3333 0
+71.6667 0
+75 0
+78.3333 0
+81.6667 0
+85 0
+88.3333 0
+91.6667 0
+95 0
+98.3333 0
+101.667 0
+105 0
+108.333 0
+111.667 0
+115 0
+118.333 0
+121.667 0
+125 0
+128.333 0
+131.667 0
+135 0
+138.333 0
+141.667 0
+145 0
+148.333 0
+151.667 0
+155 0
+158.333 0
+161.667 0
+165 0
+168.333 0
+171.667 0
+175 0
+178.333 0
+181.667 0
+185 0
+188.333 0
+191.667 0
+195 0
+198.333 0
+201.667 0
+205 0
+208.333 0
+211.667 0
+215 0
+218.333 0
+221.667 0
+225 0
+228.333 0
+231.667 0
+235 0
+238.333 0
+241.667 0
+245 0
+248.333 0
+251.667 0
+255 0
+258.333 0
+261.667 0
+265 0
+268.333 0
+271.667 0
+275 0
+278.333 0
+281.667 0
+285 0
+288.333 0
+291.667 0
+295 0
+298.333 0
+301.667 0
+305 0
+308.333 0
+311.667 0
+315 0
+318.333 0
+321.667 0
+325 0
+328.333 0
+331.667 0
+335 0
+338.333 0
+341.667 0
+345 0
+348.333 0
+351.667 0
+355 0
+358.333 0
+361.667 0
+365 0.000101671
+368.333 0.000377383
+371.667 7.09566E-05
+375 0.000635615
+378.333 0.000789555
+381.667 0.000976135
+385 0.00257355
+388.333 0.0048131
+391.667 0.00902461
+395 0.0106378
+398.333 0.0149206
+401.667 0.0239431
+405 0.0352879
+408.333 0.0459417
+411.667 0.0627941
+415 0.0784949
+418.333 0.101728
+421.667 0.122298
+425 0.149719
+428.333 0.189169
+431.667 0.22398
+435 0.260211
+438.333 0.312568
+441.667 0.348813
+445 0.392867
+448.333 0.438122
+451.667 0.494675
+455 0.552875
+458.333 0.606424
+461.667 0.668476
+465 0.717373
+468.333 0.771504
+471.667 0.824959
+475 0.849264
+478.333 0.91335
+481.667 0.952218
+485 0.979167
+488.333 1.02913
+491.667 1.06349
+495 1.09344
+498.333 1.12954
+501.667 1.13542
+505 1.17027
+508.333 1.18761
+511.667 1.19688
+515 1.22048
+518.333 1.21405
+521.667 1.23049
+525 1.22689
+528.333 1.24895
+531.667 1.26119
+535 1.24342
+538.333 1.2641
+541.667 1.27145
+545 1.28073
+548.333 1.29594
+551.667 1.28942
+555 1.28261
+558.333 1.30008
+561.667 1.29745
+565 1.31094
+568.333 1.31392
+571.667 1.3295
+575 1.34762
+578.333 1.34079
+581.667 1.33624
+585 1.34053
+588.333 1.35758
+591.667 1.37161
+595 1.38143
+598.333 1.38244
+601.667 1.38239
+605 1.39899
+608.333 1.40274
+611.667 1.3978
+615 1.39009
+618.333 1.38128
+621.667 1.38865
+625 1.40724
+628.333 1.39462
+631.667 1.38953
+635 1.37612
+638.333 1.36374
+641.667 1.37344
+645 1.37037
+648.333 1.35923
+651.667 1.36494
+655 1.3461
+658.333 1.33785
+661.667 1.33356
+665 1.32192
+668.333 1.30767
+671.667 1.2938
+675 1.27668
+678.333 1.26215
+681.667 1.25052
+685 1.22617
+688.333 1.22079
+691.667 1.19974
+695 1.18642
+698.333 1.15353
+701.667 1.1508
+705 1.1392
+708.333 1.11928
+711.667 1.09061
+715 1.07
+718.333 1.0732
+721.667 1.05867
+725 1.03903
+728.333 1.00577
+731.667 0.992298
+735 0.976907
+738.333 0.969728
+741.667 0.9602
+745 0.959695
+748.333 0.946708
+751.667 0.91764
+755 0.918229
+758.333 0.894339
+761.667 0.887336
+765 0.879178
+768.333 0.875124
+771.667 0.869039
+775 0.863137
+778.333 0.859237
+781.667 0.834173
+785 0.849646
+788.333 0.829429
+791.667 0.826206
+795 0.82659
+798.333 0.810802
+801.667 0.801908
+805 0.800466
+808.333 0.798692
+811.667 0.784347
+815 0.794058
+818.333 0.79628
+821.667 0.785255
+825 0.781092
+828.333 0.788379
+831.667 0.783201
+835 0.77843
+838.333 0.779267
+841.667 0.784277
+845 0.789404
+848.333 0.789115
+851.667 0.795288
+855 0.788859
+858.333 0.792725
+861.667 0.797401
+865 0.804056
+868.333 0.804915
+871.667 0.804593
+875 0.805138
+878.333 0.807616
+881.667 0.821877
+885 0.83365
+888.333 0.837065
+891.667 0.836277
+895 0.838925
+898.333 0.839812
+901.667 0.839407
+905 0.851432
+908.333 0.871656
+911.667 0.875002
+915 0.883926
+918.333 0.889591
+921.667 0.892918
+925 0.903571
+928.333 0.909864
+931.667 0.918107
+935 0.927809
+938.333 0.926381
+941.667 0.935422
+945 0.935435
+948.333 0.948969
+951.667 0.950512
+955 0.959092
+958.333 0.967014
+961.667 0.972959
+965 0.971861
+968.333 0.987345
+971.667 0.985408
+975 0.989524
+978.333 1.00983
+981.667 1.01021
+985 1.00771
+988.333 1.01182
+991.667 1.0197
+995 1.02475
+998.333 1.02435
+1001.67 1.02939
+1005 1.03638
+1008.33 1.03591
+1011.67 1.04876
+1015 1.05212
+1018.33 1.05124
+1021.67 1.0477
+1025 1.05421
+1028.33 1.06917
+1031.67 1.05929
+1035 1.06242
+1038.33 1.07055
+1041.67 1.07488
+1045 1.06842
+1048.33 1.06937
+1051.67 1.08034
+1055 1.07585
+1058.33 1.07947
+1061.67 1.08124
+1065 1.08269
+1068.33 1.08655
+1071.67 1.08276
+1075 1.08508
+1078.33 1.07991
+1081.67 1.07833
+1085 1.08015
+1088.33 1.08177
+1091.67 1.07607
+1095 1.08326
+1098.33 1.07985
+1101.67 1.08314
+1105 1.07932
+1108.33 1.07713
+1111.67 1.06971
+1115 1.06531
+1118.33 1.06714
+1121.67 1.0552
+1125 1.06021
+1128.33 1.05603
+1131.67 1.06102
+1135 1.0621
+1138.33 1.05079
+1141.67 1.04763
+1145 1.05008
+1148.33 1.04574
+1151.67 1.04214
+1155 1.04559
+1158.33 1.03886
+1161.67 1.03813
+1165 1.03465
+1168.33 1.03611
+1171.67 1.02915
+1175 1.02437
+1178.33 1.02058
+1181.67 1.02342
+1185 1.0242
+1188.33 1.01473
+1191.67 1.00891
+1195 1.0062
+1198.33 1.00444
+1201.67 1.00253
+1205 1.0054
+1208.33 1.00357
+1211.67 0.997478
+1215 0.997942
+1218.33 1.00112
+1221.67 0.996234
+1225 0.995043
+1228.33 0.989565
+1231.67 0.987352
+1235 0.988566
+1238.33 0.987893
+1241.67 0.981756
+1245 0.984512
+1248.33 0.984885
+1251.67 0.974812
+1255 0.980408
+1258.33 0.984205
+1261.67 0.977995
+1265 0.974127
+1268.33 0.975777
+1271.67 0.973337
+1275 0.965547
+1278.33 0.971202
+1281.67 0.976906
+1285 0.974075
+1288.33 0.968648
+1291.67 0.975276
+1295 0.97376
+1298.33 0.96509
+1301.67 0.969628
+1305 0.968061
+1308.33 0.977384
+1311.67 0.966963
+1315 0.965562
+1318.33 0.965316
+1321.67 0.972759
+1325 0.966909
+1328.33 0.966431
+1331.67 0.971197
+1335 0.973503
+1338.33 0.973722
+1341.67 0.971015
+1345 0.980534
+1348.33 0.979058
+1351.67 0.975548
+1355 0.974426
+1358.33 0.979987
+1361.67 0.977024
+1365 0.976096
+1368.33 0.974158
+1371.67 0.974522
+1375 0.977783
+1378.33 0.987595
+1381.67 0.979454
+1385 0.979534
+1388.33 0.981151
+1391.67 0.975462
+1395 0.976661
+1398.33 0.980978
+1401.67 0.988009
+1405 0.988998
+1408.33 0.988205
+1411.67 0.982369
+1415 0.984779
+1418.33 0.981689
+1421.67 0.98894
+1425 0.986688
+1428.33 0.986989
+1431.67 0.990372
+1435 0.992315
+1438.33 0.99563
+1441.67 0.99864
+1445 1.00283
+1448.33 0.996373
+1451.67 0.998167
+1455 1.00106
+1458.33 1.006
+1461.67 1.00653
+1465 1.00695
+1468.33 1.01338
+1471.67 1.01073
+1475 1.01146
+1478.33 1.01456
+1481.67 1.01116
+1485 1.01301
+1488.33 1.00993
+1491.67 1.0158
+1495 1.00974
+1498.33 1.01479
+1501.67 1.01685
+1505 1.02074
+1508.33 1.01819
+1511.67 1.01898
+1515 1.01709
+1518.33 1.02139
+1521.67 1.02423
+1525 1.01789
+1528.33 1.02028
+1531.67 1.01781
+1535 1.01968
+1538.33 1.0212
+1541.67 1.01935
+1545 1.02473
+1548.33 1.02784
+1551.67 1.01974
+1555 1.01634
+1558.33 1.02438
+1561.67 1.02309
+1565 1.02091
+1568.33 1.01915
+1571.67 1.02155
+1575 1.01996
+1578.33 1.01776
+1581.67 1.01519
+1585 1.02059
+1588.33 1.01606
+1591.67 1.01429
+1595 1.02282
+1598.33 1.01215
+1601.67 1.01781
+1605 1.01189
+1608.33 1.01329
+1611.67 1.01638
+1615 1.01698
+1618.33 1.01277
+1621.67 1.01274
+1625 1.01197
+1628.33 1.01075
+1631.67 1.00642
+1635 1.00766
+1638.33 1.00318
+1641.67 1.01086
+1645 1.00873
+1648.33 1.00407
+1651.67 1.00978
+1655 1.00931
+1658.33 1.00907
+1661.67 1.00851
+1665 1.00771
+1668.33 1.00698
+1671.67 1.00556
+1675 1.00757
+1678.33 1.00432
+1681.67 1.00753
+1685 1.00741
+1688.33 1.00642
+1691.67 1.0076
+1695 1.00447
+1698.33 1.00679
+1701.67 1.01223
+1705 1.00925
+1708.33 1.00137
+1711.67 1.00211
+1715 1.00166
+1718.33 1.00444
+1721.67 1.00318
+1725 0.997972
+1728.33 1.00188
+1731.67 1.0036
+1735 1.0042
+1738.33 1.00543
+1741.67 1.00157
+1745 1.00158
+1748.33 1.00366
+1751.67 0.996288
+1755 1.00109
+1758.33 1.00729
+1761.67 1.00311
+1765 1.00129
+1768.33 1.0004
+1771.67 1.00295
+1775 1.00286
+1778.33 1.00377
+1781.67 1.00353
+1785 1.00335
+1788.33 1.00074
+1791.67 1.00267
+1795 1.00021
+1798.33 1.00467
+1801.67 1.00455
+1805 1.00106
+1808.33 1.00444
+1811.67 1.00455
+1815 1.00573
+1818.33 1.00168
+1821.67 1.00376
+1825 1.00463
+1828.33 1.00665
+1831.67 1.00228
+1835 0.999926
+1838.33 1.00284
+1841.67 1.00462
+1845 1.00444
+1848.33 1.00412
+1851.67 1.00244
+1855 1.00583
+1858.33 1.00608
+1861.67 1.00884
+1865 1.00584
+1868.33 1.00617
+1871.67 1.00547
+1875 1.01234
+1878.33 1.00723
+1881.67 1.00717
+1885 1.00465
+1888.33 1.0017
+1891.67 1.00026
+1895 1.00124
+1898.33 1.00521
+&

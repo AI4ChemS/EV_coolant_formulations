@@ -1,0 +1,76 @@
+
+
+# ----------------- Init Section -----------------
+
+# Default styles and settings for AMBER based force-fields:
+units           real
+atom_style      full
+bond_style      harmonic
+angle_style     harmonic
+improper_style  cvff
+dihedral_style  opls
+pair_style lj/cut/coul/long 12.500
+kspace_style    pppm 1.0e-4
+pair_modify     tail yes mix arithmetic
+special_bonds   lj/coul 0.0 0.0 0.5
+# special_bonds   amber
+
+# ----------------- Atom Definition Section -----------------
+
+read_data ${data}
+
+include ${settings}
+
+# ----------------- Settings Section -----------------
+
+log ${name}_npt.log
+
+## create velocity profile
+velocity        all create 750 2 units box
+velocity        all zero linear units box
+
+restart 1000000  ${name}.*.restart
+
+## thermostat and integrator
+minimize       1e-4 1e-6 10000 10000
+
+variable        t equal "step"
+variable        T equal "temp"
+variable        P equal "press"
+variable        vme equal "vol"
+variable        poTE equal "pe"
+variable        kiE equal "ke"
+variable        totalE equal "etotal"
+variable        vdwlE equal "evdwl"
+variable        coulombicE equal "ecoul"
+variable        longE equal "elong"
+variable        pairE equal "epair"
+variable        molE equal "emol"
+variable        H equal "enthalpy"
+variable        d equal "density"
+
+thermo_style    custom step temp press vol pe ke etotal enthalpy evdwl ecoul elong epair emol density
+
+print           "Step Temp Press Volume PotEng KinEng TotEng Enthalpy E_vdwl E_coul E_long E_pair E_mol Density" file ${name}_750_thermo.txt
+fix             PRINT all print 1000 "$t $T $P $(v_vme) $(v_poTE) $(v_kiE) $(v_totalE) $H $(v_vdwlE) $(v_coulombicE) $(v_longE) $(v_pairE) $(v_molE) $d" append ${name}_750_thermo.txt title ""
+fix             HEAT all npt temp 500 500 100.0 iso 1.0 1.0 1000.0
+run             500000
+unfix           HEAT
+unfix           PRINT
+
+print           "Step Temp Press Volume PotEng KinEng TotEng Enthalpy E_vdwl E_coul E_long E_pair E_mol Density" file ${name}_cool_thermo.txt
+fix             PRINT all print 1000 "$t $T $P $(v_vme) $(v_poTE) $(v_kiE) $(v_totalE) $H $(v_vdwlE) $(v_coulombicE) $(v_longE) $(v_pairE) $(v_molE) $d" append ${name}_cool_thermo.txt title ""
+fix             COOL all npt temp 500 ${mytemp} 100.0 iso 1.0 1.0 1000.0
+run             500000
+unfix           COOL
+unfix           PRINT
+
+print           "Step Temp Press Volume PotEng KinEng TotEng Enthalpy E_vdwl E_coul E_long E_pair E_mol Density" file ${name}_${mytemp}_npt_thermostyle.txt
+fix             PRINT all print 1000 "$t $T $P $(v_vme) $(v_poTE) $(v_kiE) $(v_totalE) $H $(v_vdwlE) $(v_coulombicE) $(v_longE) $(v_pairE) $(v_molE) $d" append ${name}_${mytemp}_npt_thermostyle.txt title ""
+fix             NPT all npt temp ${mytemp} ${mytemp} 100.0 iso 1.0 1.0 1000.0
+run             5000000
+unfix           NPT
+unfix           PRINT
+
+write_data      ${name}_${mytemp}_annealed.data
+

@@ -1,0 +1,201 @@
+    pair_coeff @/atom:C11/type1 @/atom:C11/type1 0.066 3.5000000
+    pair_coeff @/atom:C11/type2 @/atom:C11/type2 0.066 3.5000000
+    pair_coeff @/atom:C11/type3 @/atom:C11/type3 0.066 3.5000000
+    pair_coeff @/atom:C11/type4 @/atom:C11/type4 0.066 3.5000000
+    pair_coeff @/atom:C11/type5 @/atom:C11/type5 0.066 3.5000000
+    pair_coeff @/atom:C11/type6 @/atom:C11/type6 0.170 3.1200000
+    pair_coeff @/atom:C11/type7 @/atom:C11/type7 0.030 2.5000000
+    pair_coeff @/atom:C11/type8 @/atom:C11/type8 0.030 2.5000000
+    pair_coeff @/atom:C11/type9 @/atom:C11/type9 0.030 2.5000000
+    pair_coeff @/atom:C11/type10 @/atom:C11/type10 0.030 2.5000000
+    pair_coeff @/atom:C11/type11 @/atom:C11/type11 0.030 2.5000000
+    pair_coeff @/atom:C11/type12 @/atom:C11/type12 0.030 2.5000000
+    pair_coeff @/atom:C11/type13 @/atom:C11/type13 0.030 2.5000000
+    pair_coeff @/atom:C11/type14 @/atom:C11/type14 0.030 2.5000000
+    pair_coeff @/atom:C11/type15 @/atom:C11/type15 0.030 2.5000000
+    pair_coeff @/atom:C11/type16 @/atom:C11/type16 0.030 2.5000000
+    pair_coeff @/atom:C11/type17 @/atom:C11/type17 0.030 2.5000000
+    pair_coeff @/atom:C11/type18 @/atom:C11/type18 0.000 0.0000000
+    bond_coeff @/bond:C11/type1 268.0000 1.5290
+    bond_coeff @/bond:C11/type2 268.0000 1.5290
+    bond_coeff @/bond:C11/type3 268.0000 1.5290
+    bond_coeff @/bond:C11/type4 268.0000 1.5290
+    bond_coeff @/bond:C11/type5 320.0000 1.4100
+    bond_coeff @/bond:C11/type6 340.0000 1.0900
+    bond_coeff @/bond:C11/type7 340.0000 1.0900
+    bond_coeff @/bond:C11/type8 340.0000 1.0900
+    bond_coeff @/bond:C11/type9 340.0000 1.0900
+    bond_coeff @/bond:C11/type10 340.0000 1.0900
+    bond_coeff @/bond:C11/type11 340.0000 1.0900
+    bond_coeff @/bond:C11/type12 340.0000 1.0900
+    bond_coeff @/bond:C11/type13 340.0000 1.0900
+    bond_coeff @/bond:C11/type14 340.0000 1.0900
+    bond_coeff @/bond:C11/type15 340.0000 1.0900
+    bond_coeff @/bond:C11/type16 340.0000 1.0900
+    bond_coeff @/bond:C11/type17 553.0000 0.9450
+    angle_coeff @/angle:C11/type1 58.350 112.700
+    angle_coeff @/angle:C11/type2 58.350 112.700
+    angle_coeff @/angle:C11/type3 58.350 112.700
+    angle_coeff @/angle:C11/type4 50.000 109.500
+    angle_coeff @/angle:C11/type5 37.500 110.700
+    angle_coeff @/angle:C11/type6 37.500 110.700
+    angle_coeff @/angle:C11/type7 37.500 110.700
+    angle_coeff @/angle:C11/type8 37.500 110.700
+    angle_coeff @/angle:C11/type9 37.500 110.700
+    angle_coeff @/angle:C11/type10 37.500 110.700
+    angle_coeff @/angle:C11/type11 37.500 110.700
+    angle_coeff @/angle:C11/type12 37.500 110.700
+    angle_coeff @/angle:C11/type13 37.500 110.700
+    angle_coeff @/angle:C11/type14 37.500 110.700
+    angle_coeff @/angle:C11/type15 37.500 110.700
+    angle_coeff @/angle:C11/type16 55.000 108.500
+    angle_coeff @/angle:C11/type17 33.000 107.800
+    angle_coeff @/angle:C11/type18 50.000 109.500
+    angle_coeff @/angle:C11/type19 37.500 110.700
+    angle_coeff @/angle:C11/type20 33.000 107.800
+    angle_coeff @/angle:C11/type21 33.000 107.800
+    angle_coeff @/angle:C11/type22 33.000 107.800
+    angle_coeff @/angle:C11/type23 37.500 110.700
+    angle_coeff @/angle:C11/type24 33.000 107.800
+    angle_coeff @/angle:C11/type25 33.000 107.800
+    angle_coeff @/angle:C11/type26 33.000 107.800
+    angle_coeff @/angle:C11/type27 37.500 110.700
+    angle_coeff @/angle:C11/type28 33.000 107.800
+    angle_coeff @/angle:C11/type29 35.000 109.500
+    angle_coeff @/angle:C11/type30 37.500 110.700
+    angle_coeff @/angle:C11/type31 37.500 110.700
+    dihedral_coeff @/dihedral:C11/type1 1.300 -0.200 0.200 0.000
+    dihedral_coeff @/dihedral:C11/type2 1.300 -0.200 0.200 0.000
+    dihedral_coeff @/dihedral:C11/type3 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type4 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type5 -0.356 -0.174 0.492 0.000
+    dihedral_coeff @/dihedral:C11/type6 0.000 0.000 0.468 0.000
+    dihedral_coeff @/dihedral:C11/type7 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type8 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type9 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type10 -0.356 -0.174 0.492 0.000
+    dihedral_coeff @/dihedral:C11/type11 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type12 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type13 0.000 0.000 0.468 0.000
+    dihedral_coeff @/dihedral:C11/type14 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type15 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type16 -1.552 0.000 0.000 0.000
+    dihedral_coeff @/dihedral:C11/type17 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type18 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type19 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type20 0.000 0.000 0.468 0.000
+    dihedral_coeff @/dihedral:C11/type21 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type22 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type23 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type24 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type25 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type26 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type27 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type28 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type29 0.000 0.000 0.352 0.000
+    dihedral_coeff @/dihedral:C11/type30 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type31 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type32 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type33 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type34 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type35 0.000 0.000 0.468 0.000
+    dihedral_coeff @/dihedral:C11/type36 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type37 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type38 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C11/type39 0.000 0.000 0.468 0.000
+    improper_coeff @/improper:C11/type1 0.000 -1 2
+    improper_coeff @/improper:C11/type2 0.000 -1 2
+    improper_coeff @/improper:C11/type3 0.000 -1 2
+    improper_coeff @/improper:C11/type4 0.000 -1 2
+    improper_coeff @/improper:C11/type5 0.000 -1 2
+    improper_coeff @/improper:C11/type6 0.000 -1 2
+    improper_coeff @/improper:C11/type7 0.000 -1 2
+    improper_coeff @/improper:C11/type8 0.000 -1 2
+    improper_coeff @/improper:C11/type9 0.000 -1 2
+    improper_coeff @/improper:C11/type10 0.000 -1 2
+    pair_coeff @/atom:C26/type1 @/atom:C26/type1 0.066 3.5000000
+    pair_coeff @/atom:C26/type2 @/atom:C26/type2 0.066 3.5000000
+    pair_coeff @/atom:C26/type3 @/atom:C26/type3 0.066 3.5000000
+    pair_coeff @/atom:C26/type4 @/atom:C26/type4 0.300 3.4000000
+    pair_coeff @/atom:C26/type5 @/atom:C26/type5 0.066 3.5000000
+    pair_coeff @/atom:C26/type6 @/atom:C26/type6 0.300 3.4000000
+    pair_coeff @/atom:C26/type7 @/atom:C26/type7 0.030 2.5000000
+    pair_coeff @/atom:C26/type8 @/atom:C26/type8 0.030 2.5000000
+    pair_coeff @/atom:C26/type9 @/atom:C26/type9 0.030 2.5000000
+    pair_coeff @/atom:C26/type10 @/atom:C26/type10 0.030 2.5000000
+    pair_coeff @/atom:C26/type11 @/atom:C26/type11 0.030 2.5000000
+    pair_coeff @/atom:C26/type12 @/atom:C26/type12 0.030 2.5000000
+    pair_coeff @/atom:C26/type13 @/atom:C26/type13 0.030 2.5000000
+    pair_coeff @/atom:C26/type14 @/atom:C26/type14 0.030 2.5000000
+    bond_coeff @/bond:C26/type1 268.0000 1.5290
+    bond_coeff @/bond:C26/type2 268.0000 1.5290
+    bond_coeff @/bond:C26/type3 245.0000 1.7810
+    bond_coeff @/bond:C26/type4 268.0000 1.5290
+    bond_coeff @/bond:C26/type5 245.0000 1.7810
+    bond_coeff @/bond:C26/type6 340.0000 1.0900
+    bond_coeff @/bond:C26/type7 340.0000 1.0900
+    bond_coeff @/bond:C26/type8 340.0000 1.0900
+    bond_coeff @/bond:C26/type9 340.0000 1.0900
+    bond_coeff @/bond:C26/type10 340.0000 1.0900
+    bond_coeff @/bond:C26/type11 340.0000 1.0900
+    bond_coeff @/bond:C26/type12 340.0000 1.0900
+    bond_coeff @/bond:C26/type13 340.0000 1.0900
+    angle_coeff @/angle:C26/type1 58.350 112.700
+    angle_coeff @/angle:C26/type2 69.000 109.800
+    angle_coeff @/angle:C26/type3 58.350 112.700
+    angle_coeff @/angle:C26/type4 69.000 109.800
+    angle_coeff @/angle:C26/type5 37.500 110.700
+    angle_coeff @/angle:C26/type6 37.500 110.700
+    angle_coeff @/angle:C26/type7 37.500 110.700
+    angle_coeff @/angle:C26/type8 37.500 110.700
+    angle_coeff @/angle:C26/type9 37.500 110.700
+    angle_coeff @/angle:C26/type10 37.500 110.700
+    angle_coeff @/angle:C26/type11 37.500 110.700
+    angle_coeff @/angle:C26/type12 37.500 110.700
+    angle_coeff @/angle:C26/type13 51.000 107.600
+    angle_coeff @/angle:C26/type14 37.500 110.700
+    angle_coeff @/angle:C26/type15 33.000 107.800
+    angle_coeff @/angle:C26/type16 33.000 107.800
+    angle_coeff @/angle:C26/type17 37.500 110.700
+    angle_coeff @/angle:C26/type18 51.000 107.600
+    angle_coeff @/angle:C26/type19 33.000 107.800
+    angle_coeff @/angle:C26/type20 37.500 110.700
+    angle_coeff @/angle:C26/type21 51.000 107.600
+    angle_coeff @/angle:C26/type22 51.000 107.600
+    angle_coeff @/angle:C26/type23 33.000 107.800
+    angle_coeff @/angle:C26/type24 37.500 110.700
+    dihedral_coeff @/dihedral:C26/type1 0.000 0.000 0.400 0.000
+    dihedral_coeff @/dihedral:C26/type2 1.300 -0.200 0.200 0.000
+    dihedral_coeff @/dihedral:C26/type3 0.000 0.000 0.400 0.000
+    dihedral_coeff @/dihedral:C26/type4 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type5 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type6 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type7 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type8 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type9 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type10 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type11 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type12 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type13 0.000 0.000 0.400 0.000
+    dihedral_coeff @/dihedral:C26/type14 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type15 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type16 0.000 0.000 0.400 0.000
+    dihedral_coeff @/dihedral:C26/type17 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type18 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type19 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type20 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type21 0.000 0.000 0.400 0.000
+    dihedral_coeff @/dihedral:C26/type22 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type23 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type24 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type25 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type26 0.000 0.000 0.300 0.000
+    dihedral_coeff @/dihedral:C26/type27 0.000 0.000 0.400 0.000
+    improper_coeff @/improper:C26/type1 0.000 -1 2
+    improper_coeff @/improper:C26/type2 0.000 -1 2
+    improper_coeff @/improper:C26/type3 0.000 -1 2
+    improper_coeff @/improper:C26/type4 0.000 -1 2
+    improper_coeff @/improper:C26/type5 0.000 -1 2
+    improper_coeff @/improper:C26/type6 0.000 -1 2
+    improper_coeff @/improper:C26/type7 0.000 -1 2
+    improper_coeff @/improper:C26/type8 0.000 -1 2

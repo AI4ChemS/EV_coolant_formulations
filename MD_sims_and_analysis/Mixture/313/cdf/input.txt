@@ -1,0 +1,103 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Dec  9 2023 02:02:10
+! Source code version: Jul 29 2022
+! Input file written at Tue Jan 20 13:50:22 2026.
+! Enter the file name of the .xyz frame with the atom labels: 
+mixid_977_packed.xyz
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+n
+! Use these values (y) or enter different values (n)? [yes] 
+n
+! Use these values (y/n)? [yes] 
+n
+! Are the 3 cell vectors of the same size (yes/no)? [yes] 
+
+! Enter length of cell vector in pm: 
+3998.5042
+! Create images of the structural formulas (y/n)? [no] 
+y
+! Accept these molecules (y) or change something (n)? [yes] 
+
+! Which functions to compute (comma separated)?
+cdf
+! Use the advanced mode for the main part (y/n)? [no] 
+
+! How many channels should the Combined Distribution Function have? [2] 
+
+! Channel 1: Enter function type (e.g. rdf): 
+
+! There is no default value. Enter a character string.
+! Channel 1: Enter function type (e.g. rdf): 
+rdf
+! Channel 2: Enter function type (e.g. rdf): 
+adf
+! Which of the molecules should be the reference molecule (C4Cl2H8=1, C5H12O=2)? 
+2
+! Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+! Which molecule should be observed (C4Cl2H8=1, C5H12O=2)? 
+2
+! Take reference atom(s) from RM C5H12O (0) or from OM C5H12O (1)? [0] 
+
+! Take observed atom(s) from RM C5H12O (0) or from OM C5H12O (1)? [1] 
+
+! Which atom(s) to take from RM C5H12O (e.g. "C1,C3-5,H", "*"=all)? [#2]
+H2
+! Which atom(s) to take from OM C5H12O (e.g. "C1,C3-5,H", "*"=all)? [#2]
+O1
+! Enter the maximal radius of this RDF (in pm): [1000.0] 
+
+! Enter the resolution (bin count) for this RDF: [300] 
+
+! Correct radial distribution for this RDF (y/n)? [yes] 
+
+! Should the 1. vector depict position (1), dipole (2), velocity (3) or force (4)? [1] 
+
+! Should the 2. vector depict position (1), dipole (2), velocity (3) or force (4)? [1] 
+
+! Should the 1. vector connect 2 points (0) or stand perpendicular to 3 points (1)? [0] 
+
+! Take atom(s) at the base point from RM C5H12O (0) or from OM C5H12O (1)? [0] 
+
+! Please enter the atom(s) at the base point (e.g. C7):
+O1
+! Take atom(s) at the tip point from RM C5H12O (0) or from OM C5H12O (1)? [0] 
+
+! Please enter the atom(s) at the tip point (e.g. C7):
+H2
+! Should the 2. vector connect 2 points (0) or stand perpendicular to 3 points (1)? [0] 
+
+! Take atom(s) at the base point from RM C5H12O (0) or from OM C5H12O (1)? [1] 
+0
+! Please enter the atom(s) at the base point (e.g. C7):
+H2
+! Take atom(s) at the tip point from RM C5H12O (0) or from OM C5H12O (1)? [1] 
+1
+! Please enter the atom(s) at the tip point (e.g. C7):
+O1
+! Enter minimal angle between the vectors: [0 deg] 
+
+! Enter maximal angle between the vectors: [180 deg] 
+
+! Please enter the resolution (bin count) for this ADF: [100] 
+
+! Apply cone correction (y/n)? [yes] 
+
+! Please enter the resolution (bin count) for CDF channel 1 (RDF): [100] 
+
+! Please enter the resolution (bin count) for CDF channel 2 (ADF): [100] 
+
+! Write out +/- correlation plot for this CDF (y/n)? [no] 
+
+! Save temporal development for this observation (y/n)? [no] 
+
+! Add a condition to this observation (y/n)? [no] 
+
+! Add another observation (y/n)? [no] 
+
+! In which trajectory frame to start processing the trajectory? [1] 
+
+! How many trajectory frames to read (from this position on)? [all] 
+
+! Use every n-th read trajectory frame for the analysis: [1] 
+
